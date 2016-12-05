@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D3B421D1DF5905B008E916B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B421C1DF5905B008E916B /* ButtonStyle.swift */; };
 		3D4340721DDE0ACA00F6642D /* AbstracBottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */; };
 		3D4340781DDE0C8B00F6642D /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340771DDE0C8B00F6642D /* Regex.swift */; };
 		3D43407D1DDE122700F6642D /* Core+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43407C1DDE122700F6642D /* Core+String.swift */; };
@@ -60,6 +61,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D3B421C1DF5905B008E916B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstracBottomNavigationController.swift; sourceTree = "<group>"; };
 		3D4340771DDE0C8B00F6642D /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
 		3D43407C1DDE122700F6642D /* Core+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Core+String.swift"; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				3D4340871DDE399600F6642D /* Material.swift */,
 				3D4340911DDE56A600F6642D /* EmptyResultError.swift */,
 				3D6102421DE0FC5500CF58F4 /* IconSet.swift */,
+				3D3B421C1DF5905B008E916B /* ButtonStyle.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				3D43408A1DDE3B5C00F6642D /* CompoundButton.swift in Sources */,
 				3D6102431DE0FC5500CF58F4 /* IconSet.swift in Sources */,
 				3D7BCBFF1DDD3BF100161DD4 /* AbstractSearchBarController.swift in Sources */,
+				3D3B421D1DF5905B008E916B /* ButtonStyle.swift in Sources */,
 				3D4340781DDE0C8B00F6642D /* Regex.swift in Sources */,
 				3D7EC0BA1DEE4B0000058C4E /* Core+CoreDataDefaultStorage.swift in Sources */,
 			);

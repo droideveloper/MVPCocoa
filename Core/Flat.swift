@@ -21,6 +21,20 @@ import Material
 public class Flat: FlatButton, LogDelegate {
 	
 	public var callback: (() -> Void)?;
+	public var buttonStyle: ButtonStyle = .borderless {
+		didSet {
+			switch buttonStyle {
+				case .borderless:
+					backgroundColor = .clear;
+					titleColor = tintColor;
+					break;
+				case .colored:
+					backgroundColor = tintColor;
+					titleColor = .white;
+					break;
+			}
+		}
+	}
 	
 	public convenience init(callback: (() -> Void)? = nil) {
 		self.init(frame: .zero);
