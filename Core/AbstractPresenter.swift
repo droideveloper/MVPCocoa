@@ -17,6 +17,7 @@
 import Foundation
 
 open class AbstractPresenter<V>: NSObject where V: ViewDelegate {
+	
 	open weak var view: V?;
 }
 

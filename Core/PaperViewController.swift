@@ -19,6 +19,7 @@ import UIKit
 import Material
 
 open class AbstractPageViewHolder<T>: UIViewController {
+	
 	open var position: Int?
 	open var item: T?;
 }

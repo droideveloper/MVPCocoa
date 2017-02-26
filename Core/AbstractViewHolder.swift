@@ -19,5 +19,6 @@ import UIKit
 import Material
 
 open class AbstractViewHolder<T>: TableViewCell {
+	
 	open var item: T?;
 }

@@ -19,6 +19,7 @@ import UIKit
 import Material
 
 open class AbstractViewController<P>: UIViewController where P: PresenterDelegate {
+	
 	open var presenter: P?
 	
 	open override func viewWillAppear(_ animated: Bool) {

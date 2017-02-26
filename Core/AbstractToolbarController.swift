@@ -19,6 +19,7 @@ import UIKit
 import Material
 
 open class AbstractToolbarController<P>: ToolbarController where P: PresenterDelegate {
+	
 	open var presenter: P?;
 	
 	open override func viewWillAppear(_ animated: Bool) {
