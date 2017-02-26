@@ -42,6 +42,10 @@ public class RxNet {
 		return SessionManager.default.rx.request(method, url, parameters: parameters, encoding: encoding, headers: headers);
 	}
 	
+	public static func request(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, headers: [String: String]? = nil) -> Observable<HTTPURLResponse> {
+		return SessionManager.default.rx.request(method, url, headers: headers);
+	}
+	
 	public static func requestData(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, parameters: [String: Any]? = nil, encoding: ParameterEncoding = URLEncoding.default, headers: [String: String]? = nil) -> Observable<(HTTPURLResponse, Data)> {
 		return SessionManager.default.rx.requestData(method, url, parameters: parameters, encoding: encoding, headers: headers);
 	}
@@ -313,6 +317,13 @@ extension Reactive where Base: SessionManager {
 		};
 	}
 	
+	public func request(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, headers: [String: String]? = nil) -> Observable<HTTPURLResponse> {
+		return request(method, url, parameters: nil, encoding: URLEncoding.default, headers: headers)
+			.flatMap { request in
+				return request.rx.response();
+		};
+	}
+	
 	public func requestData(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, parameters: [String: Any]? = nil, encoding: ParameterEncoding = URLEncoding.default, headers: [String: String]? = nil) -> Observable<(HTTPURLResponse, Data)> {
 		return request(method, url, parameters: parameters, encoding: encoding, headers: headers)
 			.flatMap { request in
@@ -442,6 +453,25 @@ extension Reactive where Base: DataRequest {
 			}
 		}
 	}
+	// Head with Data Request
+	public func response(queue: DispatchQueue? = nil) -> Observable<HTTPURLResponse> {
+		return Observable.create { observer in
+			let request = self.validateSuccessfulResponse()
+				.response(queue: queue) { (packedResponse) -> Void in
+					if let response = packedResponse.response {
+						observer.on(.next(response));
+					} else {
+						if let error = packedResponse.error {
+							observer.on(.error(error));
+						}
+					}
+					observer.on(.completed);
+			}
+			return Disposables.create {
+				return request.discharge();
+			}
+		}
+	}
 	
 	public func result<T: DataResponseSerializerProtocol>(queue: DispatchQueue? = nil, responseSerializer: T) -> Observable<T.SerializedObject> {
 		return Observable.create { observer in
@@ -490,6 +520,11 @@ extension Reactive where Base: DataRequest {
 	
 	public func data() -> Observable<Data> {
 		return result(responseSerializer: DataRequest.dataResponseSerializer());
+	}
+	
+	// Default Response for Request Like .HEAD etc.
+	public func response() -> Observable<HTTPURLResponse> {
+		return response();
 	}
 	
 	// String
