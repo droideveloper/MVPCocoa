@@ -20,6 +20,7 @@
 		3D43408E1DDE504100F6642D /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43408D1DDE504100F6642D /* RadioButton.swift */; };
 		3D4340921DDE56A600F6642D /* EmptyResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340911DDE56A600F6642D /* EmptyResultError.swift */; };
 		3D6102431DE0FC5500CF58F4 /* IconSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6102421DE0FC5500CF58F4 /* IconSet.swift */; };
+		3D736AB51E62EF9A00BDCE51 /* Core+RxDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D736AB41E62EF9A00BDCE51 /* Core+RxDispatcher.swift */; };
 		3D7BCBFB1DDD3B2A00161DD4 /* AbstractNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCBFA1DDD3B2A00161DD4 /* AbstractNavigationViewController.swift */; };
 		3D7BCBFD1DDD3BA700161DD4 /* AbstractToolbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCBFC1DDD3BA700161DD4 /* AbstractToolbarController.swift */; };
 		3D7BCBFF1DDD3BF100161DD4 /* AbstractSearchBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCBFE1DDD3BF100161DD4 /* AbstractSearchBarController.swift */; };
@@ -74,6 +75,7 @@
 		3D43408D1DDE504100F6642D /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		3D4340911DDE56A600F6642D /* EmptyResultError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyResultError.swift; sourceTree = "<group>"; };
 		3D6102421DE0FC5500CF58F4 /* IconSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSet.swift; sourceTree = "<group>"; };
+		3D736AB41E62EF9A00BDCE51 /* Core+RxDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Core+RxDispatcher.swift"; sourceTree = "<group>"; };
 		3D7BCBFA1DDD3B2A00161DD4 /* AbstractNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractNavigationViewController.swift; sourceTree = "<group>"; };
 		3D7BCBFC1DDD3BA700161DD4 /* AbstractToolbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractToolbarController.swift; sourceTree = "<group>"; };
 		3D7BCBFE1DDD3BF100161DD4 /* AbstractSearchBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractSearchBarController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				3DB6A8911DEA1C3F00A72D0C /* Core+UserDefaults.swift */,
 				3D7EC0B91DEE4B0000058C4E /* Core+CoreDataDefaultStorage.swift */,
 				3D9326F21DF3916D0097F51B /* Core+UIColor.swift */,
+				3D736AB41E62EF9A00BDCE51 /* Core+RxDispatcher.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -370,6 +373,7 @@
 				3DF7390F1DDD3219009AD18C /* LogDelegate.swift in Sources */,
 				3D43407D1DDE122700F6642D /* Core+String.swift in Sources */,
 				3DF7391B1DDD39EF009AD18C /* AbstractViewController.swift in Sources */,
+				3D736AB51E62EF9A00BDCE51 /* Core+RxDispatcher.swift in Sources */,
 				3D43407F1DDE12AF00F6642D /* Core+Data.swift in Sources */,
 				3DB8EC7C1DDF391D00EF59C6 /* EventDelegate.swift in Sources */,
 				3D4340811DDE146000F6642D /* AbstractUsecase.swift in Sources */,

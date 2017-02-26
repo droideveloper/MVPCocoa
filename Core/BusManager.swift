@@ -22,15 +22,24 @@ public final class BusManager {
 	
 	private static let RxBus = PublishSubject<EventDelegate>();
 
-	public static func register<E>(on: @escaping (E) -> Void) -> Disposable where E: EventDelegate {
-		return RxBus.subscribe( onNext: { event in
-			if event is E {
-				on(event as! E);
+	public static func register(next: @escaping (EventDelegate) -> Void) -> Disposable {
+		return RxBus.subscribe({ (event: Event<EventDelegate>) in
+			switch event {
+				case .next(let delegate):
+					next(delegate);	break;
+				case .error(_):   break;
+				case .completed:  break;
 			}
 		});
 	}
 	
-	public static func post<E>(event: E) where E: EventDelegate {
+	public static func unregister(disposeable: Disposable?) -> Void {
+		if let disposeable = disposeable {
+			disposeable.dispose();
+		}
+	}
+	
+	public static func post(event: EventDelegate) -> Void {
 		RxBus.on(.next(event));
 	}
 }
