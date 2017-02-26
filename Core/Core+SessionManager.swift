@@ -42,6 +42,10 @@ public class RxNet {
 		return SessionManager.default.rx.request(method, url, parameters: parameters, encoding: encoding, headers: headers);
 	}
 	
+	public static func request(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, parameters: [String: Any]? = nil, encoding: ParameterEncoding = URLEncoding.default, headers: [String: String]? = nil) -> Observable<HTTPURLResponse> {
+		return SessionManager.default.rx.request(method, url, parameters: parameters, encoding: encoding, headers: headers);
+	}
+	
 	public static func requestData(_ method: Alamofire.HTTPMethod, _ url: URLConvertible, parameters: [String: Any]? = nil, encoding: ParameterEncoding = URLEncoding.default, headers: [String: String]? = nil) -> Observable<(HTTPURLResponse, Data)> {
 		return SessionManager.default.rx.requestData(method, url, parameters: parameters, encoding: encoding, headers: headers);
 	}
