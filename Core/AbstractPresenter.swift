@@ -18,7 +18,7 @@ import Foundation
 
 open class AbstractPresenter<V>: NSObject where V: ViewDelegate {
 	
-	open unowned var view: V;
+	open var view: V;
 	
 	public init(_ view: V) {
 		self.view = view;
