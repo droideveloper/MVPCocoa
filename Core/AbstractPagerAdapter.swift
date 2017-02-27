@@ -23,19 +23,19 @@ open class AbstractPagerAdapter<T, V>: NSObject, UIPageViewControllerDataSource 
 	open var dataSource: [T]?;
 	
 	open func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-		if let paperViewController = viewController as? V {
-			if paperViewController.position ?? 0 > 0 {
-				return viewControllerAtIndex(index: paperViewController.position ?? 0 - 1);
+		if let viewController = viewController as? V {
+			if viewController.position ?? 0 > 0 {
+				return viewControllerAtIndex(index: viewController.position ?? 0 - 1);
 			}
 		}
 		return nil;
 	}
 	
 	open func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-		if let paperViewController = viewController as? V {
+		if let viewController = viewController as? V {
 			let size = dataSource?.size() ?? 0;
-			if paperViewController.position ?? 0 < size - 1 {
-				return viewControllerAtIndex(index: paperViewController.position ?? 0 + 1);
+			if viewController.position ?? 0 < size - 1 {
+				return viewControllerAtIndex(index: viewController.position ?? 0 + 1);
 			}
 		}
 		return nil;

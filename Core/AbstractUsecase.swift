@@ -20,31 +20,31 @@ import RxSwift
 
 open class AbstractUsecase<T>: NSObject {
 	
-	private var subscription: Disposable?;
+	private var dispose: Disposable?;
 	
 	open func execute() -> T? {
 		return nil;
 	}
 	
-	open func executeAsync<C: UsecaseDelegate>(_ usecaseDelegate: C) where C.DataSet == T {
-		if let disposed = subscription {
+	open func executeAsync<C: UsecaseDelegate>(_ delegate: C) where C.DataSet == T {
+		if let disposed = dispose {
 			disposed.dispose();
-			subscription = nil;
+			dispose = nil;
 		}
-		subscription = Observable.just(execute())
+		dispose = Observable.just(execute())
 			.map{ $0! }
-			.subscribeOn(ConcurrentMainScheduler.instance)
-			.observeOn(MainScheduler.instance)
+			.subscribeOn(RxSchedulers.io)
+			.observeOn(RxSchedulers.mainThread)
 			.subscribe(onNext: { data in
-				usecaseDelegate.onSuccess(dataSet: data);
+				delegate.onSuccess(dataSet: data);
 			}, onError: { error in
-				usecaseDelegate.onError(error: error);
+				delegate.onError(error: error);
 			});
 	}
 	
 	deinit {
-		if let disposed = subscription {
-			disposed.dispose();
+		if let dispose = dispose {
+			dispose.dispose();
 		}
 	}
 }

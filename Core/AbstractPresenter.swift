@@ -23,5 +23,21 @@ open class AbstractPresenter<V>: NSObject where V: ViewDelegate {
 	public init(_ view: V) {
 		self.view = view;
 	}
+	
+	open func viewDidLoad() {
+		// TODO base implementation
+	}
+	
+	open func viewWillAppear(_ animated: Bool) {
+		// TODO base implementation
+	}
+	
+	open func viewWillDisappear(_ animated: Bool) {
+		// TODO base implementation
+	}
+	
+	open func didReceiveMemoryWarning() {
+		// TODO base implementation
+	}
 }
 
