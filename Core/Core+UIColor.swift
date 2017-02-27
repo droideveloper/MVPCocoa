@@ -20,14 +20,14 @@ import UIKit
 extension UIColor {
 	
 	public class func rgb(_ rgb: Int32, alpha: CGFloat = 1) -> UIColor {
-		return UIColor(red: CGFloat((rgb >> 16) & 0xff) / 255,
-		               green: CGFloat((rgb >> 8) & 0xff) / 255,
-		               blue: CGFloat(rgb & 0xff) / 255,
+		return UIColor(red: CGFloat((rgb >> 16) & 0xFF) / 255,
+		               green: CGFloat((rgb >> 8) & 0xFF) / 255,
+		               blue: CGFloat(rgb & 0xFF) / 255,
 		               alpha: alpha);
 	}
 	
-	public class func argb(_ argb: Int32) -> UIColor {
-		return rgb(argb, alpha: CGFloat((argb >> 24) & 0xff) / 255);
+	public class func argb(_ argb: Int64) -> UIColor {
+		return rgb(Int32(argb), alpha: CGFloat((argb >> 24) & 0xFF) / 255);
 	}
 	
 }
