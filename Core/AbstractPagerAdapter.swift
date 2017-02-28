@@ -18,7 +18,7 @@ import UIKit
 
 import Material
 
-open class AbstractPagerAdapter<T, V>: NSObject, UIPageViewControllerDataSource where V: AbstractPageViewHolder<T> {
+open class AbstractPagerAdapter<T, V>: NSObject, UIPageViewControllerDataSource where V: AbstractPageViewHolder<T, PresenterDelegate> {
 	
 	open var dataSource: [T]?;
 	
