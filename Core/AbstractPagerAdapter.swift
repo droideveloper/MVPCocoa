@@ -18,9 +18,11 @@ import UIKit
 
 import Material
 
-open class AbstractPagerAdapter<T, V>: NSObject, UIPageViewControllerDataSource where V: AbstractPageViewHolder<T, PresenterDelegate> {
+open class AbstractPagerAdapter<P: PresenterDelegate, V>: NSObject, UIPageViewControllerDataSource where V: AbstractPageViewHolder<P> {
 	
-	open var dataSource: [T]?;
+	typealias Presenter = AnyObject & PresenterDelegate;
+	
+	open var dataSource: [Any]?;
 	
 	open func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
 		if let viewController = viewController as? V {
@@ -41,7 +43,7 @@ open class AbstractPagerAdapter<T, V>: NSObject, UIPageViewControllerDataSource 
 		return nil;
 	}
 	
-	open func itemAtIndex(index: Int) -> T? {
+	open func itemAtIndex(index: Int) -> Any? {
 		return nil;
 	}
 	
