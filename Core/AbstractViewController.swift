@@ -18,7 +18,7 @@ import UIKit
 
 import Material
 
-open class AbstractViewController<P>: RootController where P: PresenterDelegate {
+open class AbstractViewController<P>: UIViewController where P: PresenterDelegate {
 	
 	open var presenter: P?
 	
@@ -29,6 +29,7 @@ open class AbstractViewController<P>: RootController where P: PresenterDelegate 
 	
 	open override func viewDidLoad() {
 		super.viewDidLoad();
+		prepare();
 		presenter?.viewDidLoad();
 	}
 	
@@ -40,5 +41,11 @@ open class AbstractViewController<P>: RootController where P: PresenterDelegate 
 	open override func didReceiveMemoryWarning() {
 		super.didReceiveMemoryWarning();
 		presenter?.didReceiveMemoryWarning();
+	}
+	
+	open func prepare() {
+		view.clipsToBounds = true
+		view.backgroundColor = .white
+		view.contentScaleFactor = Screen.scale
 	}
 }

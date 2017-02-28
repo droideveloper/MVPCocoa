@@ -18,8 +18,9 @@ import UIKit
 
 import Material
 
-open class AbstractPageViewHolder<T>: UIViewController {
+open class AbstractPageViewHolder<T, P>: AbstractViewController<P> where P: PresenterDelegate {
 	
-	open var position: Int?
+	open var position: Int?;
 	open var item: T?;
+	
 }
