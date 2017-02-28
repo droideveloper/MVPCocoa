@@ -18,7 +18,7 @@ import UIKit
 
 import Material
 
-open class AbstractViewController<P>: UIViewController where P: PresenterDelegate {
+open class AbstractViewController<P>: RootController where P: PresenterDelegate {
 	
 	open var presenter: P?
 	
