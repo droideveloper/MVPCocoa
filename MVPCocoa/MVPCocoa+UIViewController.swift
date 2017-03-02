@@ -20,7 +20,7 @@ import Material
 
 extension UIViewController {
 	
-	var progressView: UIActivityIndicatorView? {
+	public var progressView: UIActivityIndicatorView? {
 		get {
 			for view in view.subviews {
 				if let view = view as? UIActivityIndicatorView {
@@ -31,15 +31,15 @@ extension UIViewController {
 		}
 	}
 	
-	func showProgress() {
+	public func showProgress() {
 		progressView?.startAnimating();
 	}
 	
-	func hideProgress() {
+	public func hideProgress() {
 		progressView?.stopAnimating();
 	}
 	
-	func showError(_ error: String, action actionText: String?, completed on: (() -> Void)?) {
+	public func showError(_ error: String, action actionText: String?, completed on: (() -> Void)?) {
 		if let snackbar = snackbarController?.snackbar {
 			snackbar.text = error;
 			if let str = actionText {
@@ -52,7 +52,7 @@ extension UIViewController {
 		}
 	}
 	
-	@objc func hideError() {
+	@objc public func hideError() {
 		if let snackbar = snackbarController?.snackbar {
 			snackbar.layer.removeAllAnimations();
 		}
