@@ -199,8 +199,8 @@
 				3D4340851DDE1AEA00F6642D /* Media.xcassets */,
 			);
 			name = MVPCocoa;
-			path = Core;
-			sourceTree = "<group>";
+			path = /Users/Fatih/ios/Core/MVPCocoa;
+			sourceTree = "<absolute>";
 		};
 		3DF738FA1DDD30BF009AD18C /* Frameworks */ = {
 			isa = PBXGroup;
