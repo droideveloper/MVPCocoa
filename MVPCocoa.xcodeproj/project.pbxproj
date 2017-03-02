@@ -47,6 +47,7 @@
 		3DB8EC7C1DDF391D00EF59C6 /* EventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB8EC7B1DDF391D00EF59C6 /* EventType.swift */; };
 		3DCF55A21E684273005C4CE1 /* MVPCocoa+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF55A11E684273005C4CE1 /* MVPCocoa+UIViewController.swift */; };
 		3DCF55A41E684611005C4CE1 /* DataStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DCF55A31E684611005C4CE1 /* DataStream.swift */; };
+		3DD950701E685FD8002F53D3 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3DF738F31DDD3086009AD18C /* Info.plist */; };
 		3DF738F41DDD3086009AD18C /* MVPCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DF738F21DDD3086009AD18C /* MVPCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3DF739031DDD30BF009AD18C /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF738FB1DDD30BF009AD18C /* Alamofire.framework */; };
 		3DF739041DDD30BF009AD18C /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF738FC1DDD30BF009AD18C /* AlamofireImage.framework */; };
@@ -105,7 +106,7 @@
 		3DB8EC7B1DDF391D00EF59C6 /* EventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		3DCF55A11E684273005C4CE1 /* MVPCocoa+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+UIViewController.swift"; sourceTree = "<group>"; };
 		3DCF55A31E684611005C4CE1 /* DataStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStream.swift; sourceTree = "<group>"; };
-		3DF738EF1DDD3086009AD18C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Core.framework; path = MVPCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF738EF1DDD3086009AD18C /* MVPCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MVPCocoa.framework; path = MVPCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF738F21DDD3086009AD18C /* MVPCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPCocoa.h; sourceTree = "<group>"; };
 		3DF738F31DDD3086009AD18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DF738FB1DDD30BF009AD18C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Frameworks/Alamofire.framework; sourceTree = "<group>"; };
@@ -181,7 +182,7 @@
 		3DF738F01DDD3086009AD18C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3DF738EF1DDD3086009AD18C /* Core.framework */,
+				3DF738EF1DDD3086009AD18C /* MVPCocoa.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -299,8 +300,8 @@
 			dependencies = (
 			);
 			name = MVPCocoa;
-			productName = Core;
-			productReference = 3DF738EF1DDD3086009AD18C /* Core.framework */;
+			productName = MVPCocoa;
+			productReference = 3DF738EF1DDD3086009AD18C /* MVPCocoa.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -341,6 +342,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DD950701E685FD8002F53D3 /* Info.plist in Resources */,
 				3D4340861DDE1AEA00F6642D /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -524,7 +526,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.fs.Core;
+				PRODUCT_BUNDLE_IDENTIFIER = org.fs.MVPCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -550,7 +552,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.fs.Core;
+				PRODUCT_BUNDLE_IDENTIFIER = org.fs.MVPCocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
