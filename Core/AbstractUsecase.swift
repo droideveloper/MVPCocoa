@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -26,7 +26,7 @@ open class AbstractUsecase<T>: NSObject {
 		return nil;
 	}
 	
-	open func executeAsync<C: UsecaseDelegate>(_ delegate: C) where C.DataSet == T {
+	open func executeAsync<C: UsecaseType>(_ delegate: C) where C.DataSet == T {
 		if let disposed = dispose {
 			disposed.dispose();
 			dispose = nil;

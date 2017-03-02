@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,9 +18,9 @@ import UIKit
 
 import Material
 
-open class AbstractPageViewHolder<P>: AbstractViewController<P> where P: PresenterDelegate {
+open class AbstractPageViewHolder<T, P>: AbstractViewController<P> where P: PresenterType {
 	
 	open var position: Int?;
-	open var item: Any?;
+	open var item: T?;
 	
 }

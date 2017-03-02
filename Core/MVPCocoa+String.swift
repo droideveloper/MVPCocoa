@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,11 +16,12 @@
 
 import Foundation
 
-@objc public protocol ViewDelegate {
+infix operator =~
+
+extension String {
 	
-	func showProgress();
-	func hideProgress();
+	public static func =~ (_ input: String, _ pattern: String) -> Bool {
+		return Regex(pattern).test(input);
+	}
 	
-	func showError(_ error: String, action actionText: String?, completed on: (() -> Void)?);
-	func hideError();
 }

@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,7 +16,7 @@
 
 import Foundation
 
-@objc public protocol PresenterDelegate {
+@objc public protocol PresenterType {
 	
 	func viewDidLoad();
 	func viewWillAppear(_ animated: Bool);

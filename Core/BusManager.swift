@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,10 +20,10 @@ import RxSwift
 
 public final class BusManager {
 	
-	private static let RxBus = PublishSubject<EventDelegate>();
+	private static let RxBus = PublishSubject<EventType>();
 
-	public static func register(next: @escaping (EventDelegate) -> Void) -> Disposable {
-		return RxBus.subscribe({ (event: Event<EventDelegate>) in
+	public static func register(next: @escaping (EventType) -> Void) -> Disposable {
+		return RxBus.subscribe({ (event: Event<EventType>) in
 			switch event {
 				case .next(let delegate):
 					next(delegate);	break;
@@ -39,7 +39,11 @@ public final class BusManager {
 		}
 	}
 	
-	public static func post(event: EventDelegate) -> Void {
+	public static func post(event: EventType) -> Void {
 		RxBus.on(.next(event));
+	}
+	
+	public static func toObservable() -> Observable<EventType> {
+		return RxBus.asObservable();
 	}
 }

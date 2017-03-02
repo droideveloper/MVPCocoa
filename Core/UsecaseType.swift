@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,20 +14,13 @@
  * limitations under the License.
  */
 
-import UIKit
+import Foundation
 
-
-extension UIColor {
+public protocol UsecaseType {
 	
-	public class func rgb(_ rgb: Int32, alpha: CGFloat = 1) -> UIColor {
-		return UIColor(red: CGFloat((rgb >> 16) & 0xFF) / 255,
-		               green: CGFloat((rgb >> 8) & 0xFF) / 255,
-		               blue: CGFloat(rgb & 0xFF) / 255,
-		               alpha: alpha);
-	}
+	associatedtype DataSet;
 	
-	public class func argb(_ argb: Int64) -> UIColor {
-		return rgb(Int32(argb), alpha: CGFloat((argb >> 24) & 0xFF) / 255);
-	}
+	func onSuccess(dataSet: DataSet);
 	
+	func onError(error: Error);
 }

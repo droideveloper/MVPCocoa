@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3DF738EE1DDD3086009AD18C"
-               BuildableName = "Core.framework"
-               BlueprintName = "Core"
-               ReferencedContainer = "container:Core.xcodeproj">
+               BuildableName = "MVPCocoa.framework"
+               BlueprintName = "MVPCocoa"
+               ReferencedContainer = "container:MVPCocoa.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3DF738EE1DDD3086009AD18C"
-            BuildableName = "Core.framework"
-            BlueprintName = "Core"
-            ReferencedContainer = "container:Core.xcodeproj">
+            BuildableName = "MVPCocoa.framework"
+            BlueprintName = "MVPCocoa"
+            ReferencedContainer = "container:MVPCocoa.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -64,9 +64,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "3DF738EE1DDD3086009AD18C"
-            BuildableName = "Core.framework"
-            BlueprintName = "Core"
-            ReferencedContainer = "container:Core.xcodeproj">
+            BuildableName = "MVPCocoa.framework"
+            BlueprintName = "MVPCocoa"
+            ReferencedContainer = "container:MVPCocoa.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>
@@ -75,6 +75,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "MVPCocoa"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

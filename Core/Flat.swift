@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,7 +18,7 @@ import UIKit
 
 import Material
 
-public class Flat: FlatButton, LogDelegate {
+public class Flat: FlatButton, LogType {
 	
 	public var callback: (() -> Void)?;
 	public var buttonStyle: ButtonStyle = .borderless {

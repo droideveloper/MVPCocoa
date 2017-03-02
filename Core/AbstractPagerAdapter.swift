@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -18,14 +18,12 @@ import UIKit
 
 import Material
 
-open class AbstractPagerAdapter<P: PresenterDelegate, V>: NSObject, UIPageViewControllerDataSource where V: AbstractPageViewHolder<P> {
-	
-	typealias Presenter = AnyObject & PresenterDelegate;
-	
-	open var dataSource: [Any]?;
+open class AbstractPagerAdapter<T, P>: NSObject, UIPageViewControllerDataSource where P: PresenterType {
+
+	open var dataSource: [T]?;
 	
 	open func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-		if let viewController = viewController as? V {
+		if let viewController = viewController as? AbstractPageViewHolder<T, P> {
 			if viewController.position ?? 0 > 0 {
 				return viewControllerAtIndex(index: viewController.position ?? 0 - 1);
 			}
@@ -34,7 +32,7 @@ open class AbstractPagerAdapter<P: PresenterDelegate, V>: NSObject, UIPageViewCo
 	}
 	
 	open func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-		if let viewController = viewController as? V {
+		if let viewController = viewController as? AbstractPageViewHolder<T, P> {
 			let size = dataSource?.size() ?? 0;
 			if viewController.position ?? 0 < size - 1 {
 				return viewControllerAtIndex(index: viewController.position ?? 0 + 1);
@@ -43,11 +41,11 @@ open class AbstractPagerAdapter<P: PresenterDelegate, V>: NSObject, UIPageViewCo
 		return nil;
 	}
 	
-	open func itemAtIndex(index: Int) -> Any? {
+	open func itemAtIndex(index: Int) -> T? {
 		return nil;
 	}
 	
-	open func viewControllerAtIndex(index: Int) -> V? {
+	open func viewControllerAtIndex(index: Int) -> AbstractPageViewHolder<T, P>? {
 		return nil;
 	}
 	

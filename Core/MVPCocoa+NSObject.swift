@@ -1,5 +1,5 @@
 /*
- * Core Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2016 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -16,12 +16,21 @@
 
 import Foundation
 
-infix operator =~
-
-extension String {
+extension NSObject {
 	
-	public static func =~ (_ input: String, _ pattern: String) -> Bool {
-		return Regex(pattern).test(input);
+	public func log(message: String) {
+		log(level: .Debug, message: message);
 	}
 	
+	public func log(error: Error) {
+		log(level: .Error, message: "\(error.localizedDescription)");
+	}
+	
+	public func log(level: Level, message str: String) {
+		if let delegate = self as? LogType {
+			if delegate.isLogEnabled() {
+				print("\(level.description)\(delegate.getClassTag()): \(str)");
+			}
+		}
+	}
 }
