@@ -20,6 +20,12 @@ import Material
 
 extension UIViewController {
 	
+	public var application: ApplicationType? {
+		get {
+			return UIApplication.shared.delegate as? ApplicationType;
+		}
+	}
+	
 	public var progressView: UIActivityIndicatorView? {
 		get {
 			for view in view.subviews {
