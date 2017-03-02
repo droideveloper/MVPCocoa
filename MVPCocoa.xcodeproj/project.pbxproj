@@ -105,7 +105,7 @@
 		3DB8EC7B1DDF391D00EF59C6 /* EventType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventType.swift; sourceTree = "<group>"; };
 		3DCF55A11E684273005C4CE1 /* MVPCocoa+UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+UIViewController.swift"; sourceTree = "<group>"; };
 		3DCF55A31E684611005C4CE1 /* DataStream.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStream.swift; sourceTree = "<group>"; };
-		3DF738EF1DDD3086009AD18C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF738EF1DDD3086009AD18C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Core.framework; path = MVPCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DF738F21DDD3086009AD18C /* MVPCocoa.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVPCocoa.h; sourceTree = "<group>"; };
 		3DF738F31DDD3086009AD18C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DF738FB1DDD30BF009AD18C /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = ../Frameworks/Alamofire.framework; sourceTree = "<group>"; };
@@ -199,7 +199,7 @@
 				3D4340851DDE1AEA00F6642D /* Media.xcassets */,
 			);
 			name = MVPCocoa;
-			path = /Users/Fatih/ios/Core/MVPCocoa;
+			path = /Users/Fatih/ios/MVPCocoa/MVPCocoa;
 			sourceTree = "<absolute>";
 		};
 		3DF738FA1DDD30BF009AD18C /* Frameworks */ = {
@@ -520,7 +520,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = "/Users/Fatih/ios/Frameworks/**";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVPCocoa/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -546,7 +546,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				FRAMEWORK_SEARCH_PATHS = "/Users/Fatih/ios/Frameworks/**";
-				INFOPLIST_FILE = Core/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MVPCocoa/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
