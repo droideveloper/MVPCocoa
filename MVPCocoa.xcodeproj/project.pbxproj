@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D01AC4B1E69592E00EFA090 /* AbstractViewPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */; };
 		3D0257841E65970A00460B49 /* MVPCocoa+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0257831E65970A00460B49 /* MVPCocoa+UIView.swift */; };
 		3D3B421D1DF5905B008E916B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B421C1DF5905B008E916B /* ButtonStyle.swift */; };
 		3D4340721DDE0ACA00F6642D /* AbstracBottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */; };
@@ -66,6 +67,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewPagerController.swift; sourceTree = "<group>"; };
 		3D0257831E65970A00460B49 /* MVPCocoa+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+UIView.swift"; sourceTree = "<group>"; };
 		3D3B421C1DF5905B008E916B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstracBottomNavigationController.swift; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				3D7BCC0F1DDD452B00161DD4 /* AbstractViewHolder.swift */,
 				3DB8EC791DDF38EA00EF59C6 /* BusManager.swift */,
 				3D8979DD1DDD5AFF00E9E5E0 /* AbstractPageViewHolder.swift */,
+				3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -377,6 +380,7 @@
 				3DF7390D1DDD3153009AD18C /* ViewType.swift in Sources */,
 				3DF739111DDD3307009AD18C /* PresenterType.swift in Sources */,
 				3D0257841E65970A00460B49 /* MVPCocoa+UIView.swift in Sources */,
+				3D01AC4B1E69592E00EFA090 /* AbstractViewPagerController.swift in Sources */,
 				3DB8EC7A1DDF38EA00EF59C6 /* BusManager.swift in Sources */,
 				3D8979DC1DDD551900E9E5E0 /* AbstractPagerAdapter.swift in Sources */,
 				3D7C353C1DDF7B0E000EA09D /* Flat.swift in Sources */,
