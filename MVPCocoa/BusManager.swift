@@ -23,14 +23,11 @@ public final class BusManager {
 	private static let RxBus = PublishSubject<EventType>();
 
 	public static func register(next: @escaping (EventType) -> Void) -> Disposable {
-		return RxBus.subscribe({ (event: Event<EventType>) in
-			switch event {
-				case .next(let delegate):
-					next(delegate);	break;
-				case .error(_):   break;
-				case .completed:  break;
-			}
-		});
+		return RxBus.subscribe(onNext: next);
+	}
+	
+	public static func register(next: @escaping (EventType) -> Void, error: @escaping (Error) -> Void) -> Disposable {
+		return RxBus.subscribe(onNext: next, onError: error);
 	}
 	
 	public static func unregister(disposeable: Disposable?) -> Void {
@@ -45,5 +42,9 @@ public final class BusManager {
 	
 	public static func toObservable() -> Observable<EventType> {
 		return RxBus.asObservable();
+	}
+	
+	public static func toObserver() -> AnyObserver<EventType> {
+		return RxBus.asObserver();
 	}
 }
