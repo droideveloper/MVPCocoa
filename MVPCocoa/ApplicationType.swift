@@ -19,11 +19,11 @@ import Foundation
 import Material
 import Swinject
 
-public protocol ApplicationType {
+@objc public protocol ApplicationType {
 	// Colors
 	var colorPrimaryDark: UIColor	{ get }
 	var colorPrimary: UIColor	{ get }
 	var colorAccent: UIColor { get }
 	// Injector
-	var dependencyInjector: Container { get }
+	var dependencyInjector: Any { get }
 }
