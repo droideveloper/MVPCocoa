@@ -28,7 +28,7 @@ open class AbstractPagerAdapter<T>: NSObject, UIPageViewControllerDataSource {
 		if let viewController = viewController as? AbstractPageViewHolder<T> {
 			let index = viewController.position;
 			if index > 0 {
-				return viewControllerAtIndex(index: (index + 1));
+				return viewControllerAt(index: (index + 1));
 			}
 		}
 		return nil;
@@ -38,17 +38,21 @@ open class AbstractPagerAdapter<T>: NSObject, UIPageViewControllerDataSource {
 		if let viewController = viewController as? AbstractPageViewHolder<T> {
 			let index = viewController.position;
 			if index < (dataSource.count - 1) {
-				return viewControllerAtIndex(index: (index + 1));
+				return viewControllerAt(index: (index + 1));
 			}
 		}
 		return nil;
+	}
+	
+	public func presentationCount(for pageViewController: UIPageViewController) -> Int {
+		return dataSource.count;
 	}
 	
 	open func itemAt(index: Int) -> T {
 		return dataSource[index];
 	}
 	
-	open func viewControllerAtIndex(index: Int) -> AbstractPageViewHolder<T> {
+	open func viewControllerAt(index: Int) -> AbstractPageViewHolder<T> {
 		return AbstractPageViewHolder<T>(position: index, item: itemAt(index: index));
 	}
 	
