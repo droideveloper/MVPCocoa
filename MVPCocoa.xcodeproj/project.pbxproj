@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3D01AC4B1E69592E00EFA090 /* AbstractViewPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */; };
 		3D0257841E65970A00460B49 /* MVPCocoa+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0257831E65970A00460B49 /* MVPCocoa+UIView.swift */; };
+		3D3186831E7013A000AFA152 /* MVPCocoa+Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3186821E7013A000AFA152 /* MVPCocoa+Application.swift */; };
 		3D3B421D1DF5905B008E916B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B421C1DF5905B008E916B /* ButtonStyle.swift */; };
 		3D4340721DDE0ACA00F6642D /* AbstracBottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */; };
 		3D4340781DDE0C8B00F6642D /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340771DDE0C8B00F6642D /* Regex.swift */; };
@@ -70,6 +71,7 @@
 /* Begin PBXFileReference section */
 		3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewPagerController.swift; sourceTree = "<group>"; };
 		3D0257831E65970A00460B49 /* MVPCocoa+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+UIView.swift"; sourceTree = "<group>"; };
+		3D3186821E7013A000AFA152 /* MVPCocoa+Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+Application.swift"; sourceTree = "<group>"; };
 		3D3B421C1DF5905B008E916B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstracBottomNavigationController.swift; sourceTree = "<group>"; };
 		3D4340771DDE0C8B00F6642D /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
@@ -251,6 +253,7 @@
 				3D736AB41E62EF9A00BDCE51 /* MVPCocoa+RxDispatcher.swift */,
 				3D0257831E65970A00460B49 /* MVPCocoa+UIView.swift */,
 				3DCF55A11E684273005C4CE1 /* MVPCocoa+UIViewController.swift */,
+				3D3186821E7013A000AFA152 /* MVPCocoa+Application.swift */,
 			);
 			name = Utils;
 			sourceTree = "<group>";
@@ -361,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D3186831E7013A000AFA152 /* MVPCocoa+Application.swift in Sources */,
 				3D7BCC0C1DDD43A600161DD4 /* AbstractNavigationDrawerController.swift in Sources */,
 				3D7BCC031DDD3F0B00161DD4 /* AbstractSnackbarController.swift in Sources */,
 				3DCF55A41E684611005C4CE1 /* DataStream.swift in Sources */,

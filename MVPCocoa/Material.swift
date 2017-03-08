@@ -20,7 +20,7 @@ public class Material: NSObject {
 	
 	private static var inBundle: Bundle?;
 	
-	public static var bundle: Bundle {
+	private static var bundle: Bundle {
 		if nil == Material.inBundle {
 			Material.inBundle = Bundle(for: CompoundButton.self);
 			let url = Material.inBundle!.resourceURL!;
