@@ -1,5 +1,5 @@
 /*
- * MVPCocoa Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2017 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,20 +14,10 @@
  * limitations under the License.
  */
 
-import UIKit
-
-open class AbstractPageViewHolder<T>: UIViewController {
-	
-	open var position: Int;
-	open var item: T;
-	
-	public init(position: Int = 0, item: T) {
-		self.position = position;
-		self.item = item;
-		super.init(nibName: nil, bundle: nil);
-	}
-	
-	required public init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
+public final class BuildConfig {
+	#if DEBUG
+		public static let DEBUG = true;
+	#else
+		public static let DEBUG = false;
+	#endif
 }

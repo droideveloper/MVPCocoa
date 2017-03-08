@@ -18,32 +18,37 @@ import UIKit
 
 import Material
 
-open class AbstractAdapter<T, V>: NSObject, UITableViewDataSource where V: AbstractViewHolder<T> {
+open class AbstractTableAdapter<T>: NSObject, UITableViewDataSource {
 	
-	open var dataSource: [T]?;
+	open var dataSource: [T];
+	
+	public init(dataSource: [T] = []) {
+		self.dataSource = dataSource;
+	}
 	
 	open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-		return dataSource?.size() ?? 0;
+		return dataSource.count;
 	}
 	
 	open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let key = identifier(indexPath.row)!;
+		let key = identifierAt(indexPath.row);
 		let view = tableView.dequeueReusableCell(withIdentifier: key, for: indexPath);
-		if let holder = view as? V {
-			viewHolder(holder, data: dataSource?.get(index: indexPath.row));
+		if let viewHolder = view as? AbstractTableViewHolder<T> {
+			let item = itemAt(indexPath.row);
+			self.viewHolder(viewHolder, item: item);
 		}
 		return view;
 	}
 	
-	open func itemAtIndex(_ index: Int) -> T? {
-		return nil;
+	open func itemAt(_ index: Int) -> T {
+		return dataSource[index];
 	}
 	
-	open func identifier(_ index: Int) -> String? {
-		return nil;
+	open func identifierAt(_ index: Int) -> String {
+		return "kUnidentifierTablewViewCell";
 	}
 	
-	open func viewHolder(_ viewHolder: V?, data: T?) {
-		viewHolder?.item = data;
+	open func viewHolder(_ viewHolder: AbstractTableViewHolder<T>, item: T) {
+		viewHolder.item = item;
 	}
 }

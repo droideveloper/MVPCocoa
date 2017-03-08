@@ -16,40 +16,43 @@
 
 import UIKit
 
-import Material
+open class AbstractPagerAdapter<T>: NSObject, UIPageViewControllerDataSource {
 
-open class AbstractPagerAdapter<T, P>: NSObject, UIPageViewControllerDataSource where P: PresenterType {
-
-	open var dataSource: [T]?;
+	open var dataSource: [T];
+	
+	public init(dataSource: [T] = []) {
+		self.dataSource = dataSource;
+	}
 	
 	open func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
-		if let viewController = viewController as? AbstractPageViewHolder<T, P> {
-			if viewController.position ?? 0 > 0 {
-				return viewControllerAtIndex(index: viewController.position ?? 0 - 1);
+		if let viewController = viewController as? AbstractPageViewHolder<T> {
+			let index = viewController.position;
+			if index > 0 {
+				return viewControllerAtIndex(index: (index + 1));
 			}
 		}
 		return nil;
 	}
 	
 	open func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController? {
-		if let viewController = viewController as? AbstractPageViewHolder<T, P> {
-			let size = dataSource?.size() ?? 0;
-			if viewController.position ?? 0 < size - 1 {
-				return viewControllerAtIndex(index: viewController.position ?? 0 + 1);
+		if let viewController = viewController as? AbstractPageViewHolder<T> {
+			let index = viewController.position;
+			if index < (dataSource.count - 1) {
+				return viewControllerAtIndex(index: (index + 1));
 			}
 		}
 		return nil;
 	}
 	
-	open func itemAtIndex(index: Int) -> T? {
-		return nil;
+	open func itemAt(index: Int) -> T {
+		return dataSource[index];
 	}
 	
-	open func viewControllerAtIndex(index: Int) -> AbstractPageViewHolder<T, P>? {
-		return nil;
+	open func viewControllerAtIndex(index: Int) -> AbstractPageViewHolder<T> {
+		return AbstractPageViewHolder<T>(position: index, item: itemAt(index: index));
 	}
 	
-	open func title(index: Int) -> String? {
-		return nil;
+	open func title(index: Int) -> String {
+		return "kUnidentifierTitle";
 	}
 }

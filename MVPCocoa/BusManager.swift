@@ -14,19 +14,17 @@
  * limitations under the License.
  */
 
-import Foundation
-
 import RxSwift
 
 public final class BusManager {
 	
 	private static let RxBus = PublishSubject<EventType>();
 
-	public static func register(next: @escaping (EventType) -> Void) -> Disposable {
+	public static func register(_ next: @escaping (EventType) -> Void) -> Disposable {
 		return RxBus.subscribe(onNext: next);
 	}
 	
-	public static func register(next: @escaping (EventType) -> Void, error: @escaping (Error) -> Void) -> Disposable {
+	public static func register(_ next: @escaping (EventType) -> Void, _ error: @escaping (Error) -> Void) -> Disposable {
 		return RxBus.subscribe(onNext: next, onError: error);
 	}
 	

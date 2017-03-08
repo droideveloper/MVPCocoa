@@ -10,6 +10,9 @@
 		3D01AC4B1E69592E00EFA090 /* AbstractViewPagerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */; };
 		3D0257841E65970A00460B49 /* MVPCocoa+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0257831E65970A00460B49 /* MVPCocoa+UIView.swift */; };
 		3D3186831E7013A000AFA152 /* MVPCocoa+Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3186821E7013A000AFA152 /* MVPCocoa+Application.swift */; };
+		3D3186871E7023CA00AFA152 /* AbstractCollectionViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3186861E7023CA00AFA152 /* AbstractCollectionViewHolder.swift */; };
+		3D3186891E70254C00AFA152 /* AbstractCollectionAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3186881E70254C00AFA152 /* AbstractCollectionAdapter.swift */; };
+		3D31868B1E70333200AFA152 /* BuildConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D31868A1E70333200AFA152 /* BuildConfig.swift */; };
 		3D3B421D1DF5905B008E916B /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3B421C1DF5905B008E916B /* ButtonStyle.swift */; };
 		3D4340721DDE0ACA00F6642D /* AbstracBottomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */; };
 		3D4340781DDE0C8B00F6642D /* Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340771DDE0C8B00F6642D /* Regex.swift */; };
@@ -34,8 +37,8 @@
 		3D7BCC081DDD42E400161DD4 /* AbstractRootController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCC071DDD42E400161DD4 /* AbstractRootController.swift */; };
 		3D7BCC0A1DDD436200161DD4 /* AbstractPageTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCC091DDD436200161DD4 /* AbstractPageTabBarController.swift */; };
 		3D7BCC0C1DDD43A600161DD4 /* AbstractNavigationDrawerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCC0B1DDD43A600161DD4 /* AbstractNavigationDrawerController.swift */; };
-		3D7BCC0E1DDD44DB00161DD4 /* AbstractAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCC0D1DDD44DB00161DD4 /* AbstractAdapter.swift */; };
-		3D7BCC101DDD452B00161DD4 /* AbstractViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCC0F1DDD452B00161DD4 /* AbstractViewHolder.swift */; };
+		3D7BCC0E1DDD44DB00161DD4 /* AbstractTableAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCC0D1DDD44DB00161DD4 /* AbstractTableAdapter.swift */; };
+		3D7BCC101DDD452B00161DD4 /* AbstractTableViewHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCC0F1DDD452B00161DD4 /* AbstractTableViewHolder.swift */; };
 		3D7BFD701E68A55100DD365B /* ApplicationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BFD6F1E68A55100DD365B /* ApplicationType.swift */; };
 		3D7C353C1DDF7B0E000EA09D /* Flat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C353B1DDF7B0E000EA09D /* Flat.swift */; };
 		3D7C35431DDFB2AB000EA09D /* MVPCocoa+SessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7C35421DDFB2AB000EA09D /* MVPCocoa+SessionManager.swift */; };
@@ -72,6 +75,9 @@
 		3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewPagerController.swift; sourceTree = "<group>"; };
 		3D0257831E65970A00460B49 /* MVPCocoa+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+UIView.swift"; sourceTree = "<group>"; };
 		3D3186821E7013A000AFA152 /* MVPCocoa+Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+Application.swift"; sourceTree = "<group>"; };
+		3D3186861E7023CA00AFA152 /* AbstractCollectionViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCollectionViewHolder.swift; sourceTree = "<group>"; };
+		3D3186881E70254C00AFA152 /* AbstractCollectionAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractCollectionAdapter.swift; sourceTree = "<group>"; };
+		3D31868A1E70333200AFA152 /* BuildConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BuildConfig.swift; sourceTree = "<group>"; };
 		3D3B421C1DF5905B008E916B /* ButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstracBottomNavigationController.swift; sourceTree = "<group>"; };
 		3D4340771DDE0C8B00F6642D /* Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Regex.swift; sourceTree = "<group>"; };
@@ -96,8 +102,8 @@
 		3D7BCC071DDD42E400161DD4 /* AbstractRootController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractRootController.swift; sourceTree = "<group>"; };
 		3D7BCC091DDD436200161DD4 /* AbstractPageTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractPageTabBarController.swift; sourceTree = "<group>"; };
 		3D7BCC0B1DDD43A600161DD4 /* AbstractNavigationDrawerController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractNavigationDrawerController.swift; sourceTree = "<group>"; };
-		3D7BCC0D1DDD44DB00161DD4 /* AbstractAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractAdapter.swift; sourceTree = "<group>"; };
-		3D7BCC0F1DDD452B00161DD4 /* AbstractViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractViewHolder.swift; sourceTree = "<group>"; };
+		3D7BCC0D1DDD44DB00161DD4 /* AbstractTableAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractTableAdapter.swift; sourceTree = "<group>"; };
+		3D7BCC0F1DDD452B00161DD4 /* AbstractTableViewHolder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractTableViewHolder.swift; sourceTree = "<group>"; };
 		3D7BFD6F1E68A55100DD365B /* ApplicationType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationType.swift; sourceTree = "<group>"; };
 		3D7C353B1DDF7B0E000EA09D /* Flat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flat.swift; sourceTree = "<group>"; };
 		3D7C35421DDFB2AB000EA09D /* MVPCocoa+SessionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+SessionManager.swift"; sourceTree = "<group>"; };
@@ -173,6 +179,7 @@
 				3D6102421DE0FC5500CF58F4 /* IconSet.swift */,
 				3D3B421C1DF5905B008E916B /* ButtonStyle.swift */,
 				3DCF55A31E684611005C4CE1 /* DataStream.swift */,
+				3D31868A1E70333200AFA152 /* BuildConfig.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -262,7 +269,7 @@
 			isa = PBXGroup;
 			children = (
 				3D4340711DDE0ACA00F6642D /* AbstracBottomNavigationController.swift */,
-				3D7BCC0D1DDD44DB00161DD4 /* AbstractAdapter.swift */,
+				3D7BCC0D1DDD44DB00161DD4 /* AbstractTableAdapter.swift */,
 				3D7BCC0B1DDD43A600161DD4 /* AbstractNavigationDrawerController.swift */,
 				3D7BCBFA1DDD3B2A00161DD4 /* AbstractNavigationViewController.swift */,
 				3D8979DB1DDD551900E9E5E0 /* AbstractPagerAdapter.swift */,
@@ -275,10 +282,12 @@
 				3D7BCBFC1DDD3BA700161DD4 /* AbstractToolbarController.swift */,
 				3D4340801DDE146000F6642D /* AbstractUsecase.swift */,
 				3DF7391A1DDD39EF009AD18C /* AbstractViewController.swift */,
-				3D7BCC0F1DDD452B00161DD4 /* AbstractViewHolder.swift */,
+				3D7BCC0F1DDD452B00161DD4 /* AbstractTableViewHolder.swift */,
 				3DB8EC791DDF38EA00EF59C6 /* BusManager.swift */,
 				3D8979DD1DDD5AFF00E9E5E0 /* AbstractPageViewHolder.swift */,
 				3D01AC4A1E69592E00EFA090 /* AbstractViewPagerController.swift */,
+				3D3186861E7023CA00AFA152 /* AbstractCollectionViewHolder.swift */,
+				3D3186881E70254C00AFA152 /* AbstractCollectionAdapter.swift */,
 			);
 			name = Base;
 			sourceTree = "<group>";
@@ -366,11 +375,12 @@
 			files = (
 				3D3186831E7013A000AFA152 /* MVPCocoa+Application.swift in Sources */,
 				3D7BCC0C1DDD43A600161DD4 /* AbstractNavigationDrawerController.swift in Sources */,
+				3D3186891E70254C00AFA152 /* AbstractCollectionAdapter.swift in Sources */,
 				3D7BCC031DDD3F0B00161DD4 /* AbstractSnackbarController.swift in Sources */,
 				3DCF55A41E684611005C4CE1 /* DataStream.swift in Sources */,
-				3D7BCC101DDD452B00161DD4 /* AbstractViewHolder.swift in Sources */,
+				3D7BCC101DDD452B00161DD4 /* AbstractTableViewHolder.swift in Sources */,
 				3DB6A8921DEA1C3F00A72D0C /* MVPCocoa+UserDefaults.swift in Sources */,
-				3D7BCC0E1DDD44DB00161DD4 /* AbstractAdapter.swift in Sources */,
+				3D7BCC0E1DDD44DB00161DD4 /* AbstractTableAdapter.swift in Sources */,
 				3DF739161DDD354E009AD18C /* MVPCocoa+NSObject.swift in Sources */,
 				3D9326F31DF3916D0097F51B /* MVPCocoa+UIColor.swift in Sources */,
 				3D8979DE1DDD5AFF00E9E5E0 /* AbstractPageViewHolder.swift in Sources */,
@@ -389,6 +399,7 @@
 				3D0257841E65970A00460B49 /* MVPCocoa+UIView.swift in Sources */,
 				3D01AC4B1E69592E00EFA090 /* AbstractViewPagerController.swift in Sources */,
 				3DB8EC7A1DDF38EA00EF59C6 /* BusManager.swift in Sources */,
+				3D31868B1E70333200AFA152 /* BuildConfig.swift in Sources */,
 				3D8979DC1DDD551900E9E5E0 /* AbstractPagerAdapter.swift in Sources */,
 				3D7C353C1DDF7B0E000EA09D /* Flat.swift in Sources */,
 				3D7BCC081DDD42E400161DD4 /* AbstractRootController.swift in Sources */,
@@ -396,6 +407,7 @@
 				3DCF55A21E684273005C4CE1 /* MVPCocoa+UIViewController.swift in Sources */,
 				3D7BCBFD1DDD3BA700161DD4 /* AbstractToolbarController.swift in Sources */,
 				3DF739141DDD3393009AD18C /* Level.swift in Sources */,
+				3D3186871E7023CA00AFA152 /* AbstractCollectionViewHolder.swift in Sources */,
 				3D43408E1DDE504100F6642D /* RadioButton.swift in Sources */,
 				3D60AAEB1E6F5E8100F317AF /* EndpointType.swift in Sources */,
 				3D7C35431DDFB2AB000EA09D /* MVPCocoa+SessionManager.swift in Sources */,

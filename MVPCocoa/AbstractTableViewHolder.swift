@@ -14,20 +14,9 @@
  * limitations under the License.
  */
 
-import UIKit
+import Material
 
-open class AbstractPageViewHolder<T>: UIViewController {
+open class AbstractTableViewHolder<D>: TableViewCell {
 	
-	open var position: Int;
-	open var item: T;
-	
-	public init(position: Int = 0, item: T) {
-		self.position = position;
-		self.item = item;
-		super.init(nibName: nil, bundle: nil);
-	}
-	
-	required public init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
-	}
+	open var item: D?;
 }

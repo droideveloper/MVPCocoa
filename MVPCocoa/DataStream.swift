@@ -13,8 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
- 
-import Foundation
 
 public class DataStream {
 	
@@ -40,6 +38,36 @@ public class DataStream {
 	public func seek(to: Int = 0) {
 		if to >= 0  && to < stream.count {
 			self.position = to;
+		}
+	}
+	
+	public func write(url: URL, callback: @escaping (Int64, Int64) -> Void) throws {
+		if url.exists {
+			if let handle = try? FileHandle(forWritingTo: url) {
+				handle.seekToEndOfFile();
+				var index = 8192;
+				while let buffer = read() {
+					handle.write(buffer);
+					index += buffer.count;
+					callback(Int64(index), Int64(stream.count));
+				}
+				handle.closeFile();
+			}
+		} else {
+			if let buffer = read() {
+				try buffer.write(to: url);
+				callback(Int64(8192), Int64(stream.count));
+				try write(url: url, callback: callback);
+			}
+		}
+	}
+}
+
+extension URL {
+	var exists: Bool {
+		get {
+			let manager = FileManager.default;
+			return manager.fileExists(atPath: self.path);
 		}
 	}
 }
