@@ -21,6 +21,7 @@
 		3D43408C1DDE4F4300F6642D /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43408B1DDE4F4300F6642D /* CheckBox.swift */; };
 		3D43408E1DDE504100F6642D /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43408D1DDE504100F6642D /* RadioButton.swift */; };
 		3D4340921DDE56A600F6642D /* EmptyResultError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4340911DDE56A600F6642D /* EmptyResultError.swift */; };
+		3D60AAEB1E6F5E8100F317AF /* EndpointType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60AAEA1E6F5E8100F317AF /* EndpointType.swift */; };
 		3D6102431DE0FC5500CF58F4 /* IconSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6102421DE0FC5500CF58F4 /* IconSet.swift */; };
 		3D736AB51E62EF9A00BDCE51 /* MVPCocoa+RxDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D736AB41E62EF9A00BDCE51 /* MVPCocoa+RxDispatcher.swift */; };
 		3D7BCBFB1DDD3B2A00161DD4 /* AbstractNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7BCBFA1DDD3B2A00161DD4 /* AbstractNavigationViewController.swift */; };
@@ -81,6 +82,7 @@
 		3D43408B1DDE4F4300F6642D /* CheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		3D43408D1DDE504100F6642D /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		3D4340911DDE56A600F6642D /* EmptyResultError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyResultError.swift; sourceTree = "<group>"; };
+		3D60AAEA1E6F5E8100F317AF /* EndpointType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndpointType.swift; sourceTree = "<group>"; };
 		3D6102421DE0FC5500CF58F4 /* IconSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IconSet.swift; sourceTree = "<group>"; };
 		3D736AB41E62EF9A00BDCE51 /* MVPCocoa+RxDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MVPCocoa+RxDispatcher.swift"; sourceTree = "<group>"; };
 		3D7BCBFA1DDD3B2A00161DD4 /* AbstractNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AbstractNavigationViewController.swift; sourceTree = "<group>"; };
@@ -230,6 +232,7 @@
 				3DF7390E1DDD3219009AD18C /* LogType.swift */,
 				3DF739101DDD3307009AD18C /* PresenterType.swift */,
 				3D7BCC051DDD3FF300161DD4 /* UsecaseType.swift */,
+				3D60AAEA1E6F5E8100F317AF /* EndpointType.swift */,
 			);
 			name = Delegates;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				3D7BCBFD1DDD3BA700161DD4 /* AbstractToolbarController.swift in Sources */,
 				3DF739141DDD3393009AD18C /* Level.swift in Sources */,
 				3D43408E1DDE504100F6642D /* RadioButton.swift in Sources */,
+				3D60AAEB1E6F5E8100F317AF /* EndpointType.swift in Sources */,
 				3D7C35431DDFB2AB000EA09D /* MVPCocoa+SessionManager.swift in Sources */,
 				3DF7390F1DDD3219009AD18C /* LogType.swift in Sources */,
 				3D43407D1DDE122700F6642D /* MVPCocoa+String.swift in Sources */,
@@ -454,7 +458,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -504,7 +508,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
@@ -519,6 +523,7 @@
 		3DF738F81DDD3086009AD18C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSET_PACK_MANIFEST_URL_PREFIX = icons.bundle;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -532,19 +537,20 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.fs.MVPCocoa;
+				PRODUCT_BUNDLE_IDENTIFIER = org.fs.mvpcocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		3DF738F91DDD3086009AD18C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSET_PACK_MANIFEST_URL_PREFIX = icons.bundle;
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
@@ -558,12 +564,12 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = org.fs.MVPCocoa;
+				PRODUCT_BUNDLE_IDENTIFIER = org.fs.mvpcocoa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

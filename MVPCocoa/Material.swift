@@ -24,7 +24,7 @@ public class Material: NSObject {
 		if nil == Material.inBundle {
 			Material.inBundle = Bundle(for: CompoundButton.self);
 			let url = Material.inBundle!.resourceURL!;
-			let b = Bundle(url: url.appendingPathComponent("org.fs.core.icons.bundle"));
+			let b = Bundle(url: url.appendingPathComponent("org.fs.mvpcocoa.icons.bundle"));
 			if let v = b {
 				Material.inBundle = v;
 			}

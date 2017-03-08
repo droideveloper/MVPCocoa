@@ -20,31 +20,4 @@ import RxSwift
 
 open class AbstractUsecase<T>: NSObject {
 	
-	private var dispose: Disposable?;
-	
-	open func execute() -> T? {
-		return nil;
-	}
-	
-	open func executeAsync<C: UsecaseType>(_ delegate: C) where C.DataSet == T {
-		if let disposed = dispose {
-			disposed.dispose();
-			dispose = nil;
-		}
-		dispose = Observable.just(execute())
-			.map{ $0! }
-			.subscribeOn(RxSchedulers.io)
-			.observeOn(RxSchedulers.mainThread)
-			.subscribe(onNext: { data in
-				delegate.onSuccess(dataSet: data);
-			}, onError: { error in
-				delegate.onError(error: error);
-			});
-	}
-	
-	deinit {
-		if let dispose = dispose {
-			dispose.dispose();
-		}
-	}
 }

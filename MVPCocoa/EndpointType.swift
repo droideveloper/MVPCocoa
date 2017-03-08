@@ -1,5 +1,5 @@
 /*
- * MVPCocoa Copyright (C) 2016 Fatih.
+ * MVPCocoa Copyright (C) 2017 Fatih.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -13,31 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+ 
+import Alamofire
 
-import Foundation
-
-open class AbstractPresenter<V>: NSObject where V: ViewType {
+public protocol EndpointType {
 	
-	open weak var view: V?;
-	
-	public init(_ view: V?) {
-		self.view = view;
-	}
-	
-	open func viewDidLoad() {
-		// TODO base implementation
-	}
-	
-	open func viewWillAppear(_ animated: Bool) {
-		// TODO base implementation
-	}
-	
-	open func viewWillDisappear(_ animated: Bool) {
-		// TODO base implementation
-	}
-	
-	open func didReceiveMemoryWarning() {
-		// TODO base implementation
-	}
+	var baseURL: String { get }
+	var request: (HTTPMethod, URLConvertible) { get }
 }
-

@@ -14,13 +14,10 @@
  * limitations under the License.
  */
 
-import Foundation
+import RxSwift
 
 public protocol UsecaseType {
+	associatedtype D;
 	
-	associatedtype DataSet;
-	
-	func onSuccess(dataSet: DataSet);
-	
-	func onError(error: Error);
+	func async() -> Observable<D>;
 }

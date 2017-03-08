@@ -39,12 +39,4 @@ public final class BusManager {
 	public static func post(event: EventType) -> Void {
 		RxBus.on(.next(event));
 	}
-	
-	public static func toObservable() -> Observable<EventType> {
-		return RxBus.asObservable();
-	}
-	
-	public static func toObserver() -> AnyObserver<EventType> {
-		return RxBus.asObserver();
-	}
 }

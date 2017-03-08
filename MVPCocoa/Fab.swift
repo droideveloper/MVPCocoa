@@ -18,7 +18,7 @@ import UIKit
 
 import Material
 
-public class Fab: FabButton, LogType {
+public class Fab: FABButton, LogType {
 	
 	public var callback: (() -> Void)?;
 	

@@ -18,7 +18,6 @@ import Foundation
 
 @objc public protocol LogType {
 	
-	func isLogEnabled() -> Bool;
-	
+	func isLogEnabled() -> Bool;	
 	func getClassTag()	-> String;
 }

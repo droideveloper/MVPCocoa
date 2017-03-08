@@ -17,25 +17,10 @@
 import Foundation
 import UIKit
 
-public enum Level {
-	case Debug
-	case Info
-	case Warn
-	case Error
-	case Wtf
-	
-	var description: String {
-		switch self {
-		case .Debug:
-			return "D/";
-		case .Info:
-			return "I/";
-		case .Warn:
-			return "W/";
-		case .Error:
-			return "E/";
-		case .Wtf:
-			return "WTF/"
-		}
-	}
+public enum Level: String {
+	case Debug = "D/";
+	case Info = "I/";
+	case Warn = "W/";
+	case Error = "E/";
+	case Wtf = "WTF/";
 }

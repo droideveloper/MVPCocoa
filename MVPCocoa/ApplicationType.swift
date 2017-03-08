@@ -25,5 +25,5 @@ import Swinject
 	var colorPrimary: UIColor	{ get }
 	var colorAccent: UIColor { get }
 	// Injector
-	var dependencyInjector: Any { get }
+	var component: Any { get }
 }

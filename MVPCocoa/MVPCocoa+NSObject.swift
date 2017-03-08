@@ -29,7 +29,7 @@ extension NSObject {
 	public func log(level: Level, message str: String) {
 		if let delegate = self as? LogType {
 			if delegate.isLogEnabled() {
-				print("\(level.description)\(delegate.getClassTag()): \(str)");
+				print("\(level.rawValue)\(delegate.getClassTag()): \(str)");
 			}
 		}
 	}
