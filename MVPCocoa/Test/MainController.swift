@@ -11,7 +11,7 @@ import UIKit
 import RxSwift
 import RxCocoa
 
-class MainController: BaseController<MainPresenter>, MainView {
+class MainController: BaseController, MainView {
 	
 	func setPresenter(_ presenter: MainPresenter) {
 		self.presenter = presenter

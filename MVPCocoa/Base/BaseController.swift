@@ -9,8 +9,8 @@
 import Foundation
 import UIKit
 
-open class BaseController<P>: UIViewController where P: Presenter {	
-	open var presenter: P!
+open class BaseController: UIViewController {
+	open var presenter: Presenter! // only need this for that reason
 	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
