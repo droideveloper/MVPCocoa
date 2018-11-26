@@ -8,9 +8,7 @@
 
 import Foundation
 
-public protocol Presenter {
-	associatedtype View
-	
+public protocol Presenter {	
 	func didLoad()
 	func attach()
 	func detach()

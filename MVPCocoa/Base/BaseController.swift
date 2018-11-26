@@ -9,22 +9,21 @@
 import Foundation
 import UIKit
 
-open class BaseController<P>: UIViewController where P: Presenter {
-	
-	open var presenter: P?
+open class BaseController<P>: UIViewController where P: Presenter {	
+	open var presenter: P!
 	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
-		presenter?.didLoad()
+		presenter.didLoad()
 	}
 	
 	open override func viewWillAppear(_ animated: Bool) {
 		super.viewWillAppear(animated)
-		presenter?.attach()
+		presenter.attach()
 	}
 	
 	open override func viewWillDisappear(_ animated: Bool) {
-		presenter?.detach()
+		presenter.detach()
 		super.viewWillAppear(animated)
 	}
 	

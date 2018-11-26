@@ -8,9 +8,7 @@
 
 import Foundation
 
-public protocol View {
-	public associatedtype Presenter
-	
+public protocol View {	
 	func setUp()
 	func showError(_ message: String)
 	func showError(_ message: String, completion: @escaping () -> Void)

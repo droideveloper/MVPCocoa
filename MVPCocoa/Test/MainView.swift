@@ -1,5 +1,5 @@
 //
-//  MainPresenter.swift
+//  MainView.swift
 //  MVPCocoa
 //
 //  Created by Fatih Şen on 26.11.2018.
@@ -7,5 +7,8 @@
 //
 
 import Foundation
+import RxSwift
 
-public protocol MainPresenter: Presenter {}
+public protocol MainView: View {	
+	func observeTextChange() -> Observable<String>
+}
