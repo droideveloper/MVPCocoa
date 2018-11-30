@@ -11,6 +11,8 @@
 		3D00CA6E21AC148A009CFCD4 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00CA6D21AC148A009CFCD4 /* MainPresenter.swift */; };
 		3D00CA7021AC14B6009CFCD4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00CA6F21AC14B6009CFCD4 /* MainController.swift */; };
 		3D00CA7221AC15EB009CFCD4 /* MainPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00CA7121AC15EB009CFCD4 /* MainPresenterImp.swift */; };
+		3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */; };
+		3D3ED2DE21B1D3AE00EEC74C /* BaseCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */; };
 		3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF521AA9F2800557368 /* ObservableList.swift */; };
 		3DA85BF821AA9FDE00557368 /* PropertyChangable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */; };
 		3DA85BFA21AA9FFC00557368 /* CompositeDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */; };
@@ -52,6 +54,8 @@
 		3D00CA6D21AC148A009CFCD4 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		3D00CA6F21AC14B6009CFCD4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
 		3D00CA7121AC15EB009CFCD4 /* MainPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterImp.swift; sourceTree = "<group>"; };
+		3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
+		3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionController.swift; sourceTree = "<group>"; };
 		3DA85BF521AA9F2800557368 /* ObservableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableList.swift; sourceTree = "<group>"; };
 		3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyChangable.swift; sourceTree = "<group>"; };
 		3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDisposeBag.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 			children = (
 				3DA85C1A21AAA9F500557368 /* BasePresenter.swift */,
 				3DA85C1C21AAAAF100557368 /* BaseController.swift */,
+				3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */,
+				3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -424,6 +430,7 @@
 				3DA85C0021AAA08C00557368 /* View.swift in Sources */,
 				3DA85C0F21AAA79600557368 /* String+Extension.swift in Sources */,
 				3DA85BFE21AAA05900557368 /* BusManager.swift in Sources */,
+				3D3ED2DE21B1D3AE00EEC74C /* BaseCollectionController.swift in Sources */,
 				3DA85C1121AAA7B900557368 /* UICollectionView+Extension.swift in Sources */,
 				3DA85C0921AAA23500557368 /* Int+Extension.swift in Sources */,
 				3DA85C0B21AAA26900557368 /* Observable+Extension.swift in Sources */,
@@ -437,6 +444,7 @@
 				3DA85C0721AAA20700557368 /* DataRequest+Extension.swift in Sources */,
 				3D00CA7221AC15EB009CFCD4 /* MainPresenterImp.swift in Sources */,
 				3DA85C0421AAA19E00557368 /* Loggable.swift in Sources */,
+				3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */,
 				3D00CA7021AC14B6009CFCD4 /* MainController.swift in Sources */,
 				3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */,
 				3D00CA6E21AC148A009CFCD4 /* MainPresenter.swift in Sources */,
