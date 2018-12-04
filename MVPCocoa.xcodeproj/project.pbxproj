@@ -37,6 +37,8 @@
 		3DC85CA121AA980100A0FED6 /* MVPCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC85C9721AA980100A0FED6 /* MVPCocoa.framework */; };
 		3DC85CA621AA980100A0FED6 /* MVPCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC85CA521AA980100A0FED6 /* MVPCocoaTests.swift */; };
 		3DC85CA821AA980100A0FED6 /* MVPCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC85C9A21AA980100A0FED6 /* MVPCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDC9F7421B6F7B9006DFACD /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC9F7321B6F7B9006DFACD /* UITableView+Register.swift */; };
+		3DDC9F7621B6F855006DFACD /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC9F7521B6F855006DFACD /* UICollectionView+Register.swift */; };
 		8CA3C24117BE09BD2EE27427 /* Pods_MVPCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05BBEE9CE31F9B4F80C2577 /* Pods_MVPCocoa.framework */; };
 		F3DB785E1F62478E8CA1109B /* Pods_MVPCocoaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 657DD871894CCC48AAAD277C /* Pods_MVPCocoaTests.framework */; };
 /* End PBXBuildFile section */
@@ -85,6 +87,8 @@
 		3DC85CA021AA980100A0FED6 /* MVPCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC85CA521AA980100A0FED6 /* MVPCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCocoaTests.swift; sourceTree = "<group>"; };
 		3DC85CA721AA980100A0FED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DDC9F7321B6F7B9006DFACD /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
+		3DDC9F7521B6F855006DFACD /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		657DD871894CCC48AAAD277C /* Pods_MVPCocoaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVPCocoaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		840A66865CD8460F08D65FE1 /* Pods-MVPCocoaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPCocoaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVPCocoaTests/Pods-MVPCocoaTests.debug.xcconfig"; sourceTree = "<group>"; };
 		8898628155283844C13651EC /* Pods-MVPCocoa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVPCocoa.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVPCocoa/Pods-MVPCocoa.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,6 +146,8 @@
 				3DA85C1221AAA87300557368 /* UITableView+Extension.swift */,
 				3DA85C1421AAA94200557368 /* UIColor+Extension.swift */,
 				3DA85C2321AAAC6C00557368 /* UIController+Extension.swift */,
+				3DDC9F7321B6F7B9006DFACD /* UITableView+Register.swift */,
+				3DDC9F7521B6F855006DFACD /* UICollectionView+Register.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -432,6 +438,7 @@
 			files = (
 				3DA85BFC21AAA01300557368 /* Event.swift in Sources */,
 				3DA85C0221AAA15800557368 /* Presenter.swift in Sources */,
+				3DDC9F7421B6F7B9006DFACD /* UITableView+Register.swift in Sources */,
 				3DA85BFA21AA9FFC00557368 /* CompositeDisposeBag.swift in Sources */,
 				3DA85C0021AAA08C00557368 /* View.swift in Sources */,
 				3DA85C0F21AAA79600557368 /* String+Extension.swift in Sources */,
@@ -454,6 +461,7 @@
 				3DA85C0421AAA19E00557368 /* Loggable.swift in Sources */,
 				3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */,
 				3D00CA7021AC14B6009CFCD4 /* MainController.swift in Sources */,
+				3DDC9F7621B6F855006DFACD /* UICollectionView+Register.swift in Sources */,
 				3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */,
 				3D00CA6E21AC148A009CFCD4 /* MainPresenter.swift in Sources */,
 				3DA85C2421AAAC6C00557368 /* UIController+Extension.swift in Sources */,
