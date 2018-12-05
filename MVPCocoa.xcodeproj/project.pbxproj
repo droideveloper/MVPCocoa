@@ -7,10 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3D00CA6C21AC1453009CFCD4 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00CA6B21AC1453009CFCD4 /* MainView.swift */; };
-		3D00CA6E21AC148A009CFCD4 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00CA6D21AC148A009CFCD4 /* MainPresenter.swift */; };
-		3D00CA7021AC14B6009CFCD4 /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00CA6F21AC14B6009CFCD4 /* MainController.swift */; };
-		3D00CA7221AC15EB009CFCD4 /* MainPresenterImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D00CA7121AC15EB009CFCD4 /* MainPresenterImp.swift */; };
 		3D05C4B821B31B090062737F /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05C4B721B31B090062737F /* CollectionDataSource.swift */; };
 		3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */; };
 		3D3ED2DE21B1D3AE00EEC74C /* BaseCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */; };
@@ -54,10 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3D00CA6B21AC1453009CFCD4 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		3D00CA6D21AC148A009CFCD4 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
-		3D00CA6F21AC14B6009CFCD4 /* MainController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
-		3D00CA7121AC15EB009CFCD4 /* MainPresenterImp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenterImp.swift; sourceTree = "<group>"; };
 		3D05C4B721B31B090062737F /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
 		3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
 		3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionController.swift; sourceTree = "<group>"; };
@@ -171,17 +163,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		3DA85C1E21AAAB9E00557368 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				3D00CA6B21AC1453009CFCD4 /* MainView.swift */,
-				3D00CA6D21AC148A009CFCD4 /* MainPresenter.swift */,
-				3D00CA6F21AC14B6009CFCD4 /* MainController.swift */,
-				3D00CA7121AC15EB009CFCD4 /* MainPresenterImp.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
 		3DC85C8D21AA980100A0FED6 = {
 			isa = PBXGroup;
 			children = (
@@ -205,7 +186,6 @@
 		3DC85C9921AA980100A0FED6 /* MVPCocoa */ = {
 			isa = PBXGroup;
 			children = (
-				3DA85C1E21AAAB9E00557368 /* Test */,
 				3DA85C1921AAA9D100557368 /* Base */,
 				3DA85C1621AAA97C00557368 /* Net */,
 				3DA85C0521AAA1F100557368 /* Extensions */,
@@ -452,18 +432,14 @@
 				3DA85C1D21AAAAF100557368 /* BaseController.swift in Sources */,
 				3DA85C1521AAA94200557368 /* UIColor+Extension.swift in Sources */,
 				3DA85C1321AAA87300557368 /* UITableView+Extension.swift in Sources */,
-				3D00CA6C21AC1453009CFCD4 /* MainView.swift in Sources */,
 				3DA85BF821AA9FDE00557368 /* PropertyChangable.swift in Sources */,
 				3DA85C1B21AAA9F500557368 /* BasePresenter.swift in Sources */,
 				3DA85C0721AAA20700557368 /* DataRequest+Extension.swift in Sources */,
-				3D00CA7221AC15EB009CFCD4 /* MainPresenterImp.swift in Sources */,
 				3D05C4B821B31B090062737F /* CollectionDataSource.swift in Sources */,
 				3DA85C0421AAA19E00557368 /* Loggable.swift in Sources */,
 				3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */,
-				3D00CA7021AC14B6009CFCD4 /* MainController.swift in Sources */,
 				3DDC9F7621B6F855006DFACD /* UICollectionView+Register.swift in Sources */,
 				3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */,
-				3D00CA6E21AC148A009CFCD4 /* MainPresenter.swift in Sources */,
 				3DA85C2421AAAC6C00557368 /* UIController+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
