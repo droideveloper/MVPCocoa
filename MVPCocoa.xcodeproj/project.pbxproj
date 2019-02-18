@@ -33,6 +33,7 @@
 		3DC85CA121AA980100A0FED6 /* MVPCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC85C9721AA980100A0FED6 /* MVPCocoa.framework */; };
 		3DC85CA621AA980100A0FED6 /* MVPCocoaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC85CA521AA980100A0FED6 /* MVPCocoaTests.swift */; };
 		3DC85CA821AA980100A0FED6 /* MVPCocoa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DC85C9A21AA980100A0FED6 /* MVPCocoa.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3DDC79BC221AE39500976F6B /* Requestable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC79BB221AE39500976F6B /* Requestable+Extension.swift */; };
 		3DDC9F7421B6F7B9006DFACD /* UITableView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC9F7321B6F7B9006DFACD /* UITableView+Register.swift */; };
 		3DDC9F7621B6F855006DFACD /* UICollectionView+Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DDC9F7521B6F855006DFACD /* UICollectionView+Register.swift */; };
 		8CA3C24117BE09BD2EE27427 /* Pods_MVPCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D05BBEE9CE31F9B4F80C2577 /* Pods_MVPCocoa.framework */; };
@@ -79,6 +80,7 @@
 		3DC85CA021AA980100A0FED6 /* MVPCocoaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVPCocoaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC85CA521AA980100A0FED6 /* MVPCocoaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVPCocoaTests.swift; sourceTree = "<group>"; };
 		3DC85CA721AA980100A0FED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DDC79BB221AE39500976F6B /* Requestable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Requestable+Extension.swift"; sourceTree = "<group>"; };
 		3DDC9F7321B6F7B9006DFACD /* UITableView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Register.swift"; sourceTree = "<group>"; };
 		3DDC9F7521B6F855006DFACD /* UICollectionView+Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Register.swift"; sourceTree = "<group>"; };
 		657DD871894CCC48AAAD277C /* Pods_MVPCocoaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVPCocoaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -140,6 +142,7 @@
 				3DA85C2321AAAC6C00557368 /* UIController+Extension.swift */,
 				3DDC9F7321B6F7B9006DFACD /* UITableView+Register.swift */,
 				3DDC9F7521B6F855006DFACD /* UICollectionView+Register.swift */,
+				3DDC79BB221AE39500976F6B /* Requestable+Extension.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				3DA85BFE21AAA05900557368 /* BusManager.swift in Sources */,
 				3D3ED2DE21B1D3AE00EEC74C /* BaseCollectionController.swift in Sources */,
 				3DA85C1121AAA7B900557368 /* UICollectionView+Extension.swift in Sources */,
+				3DDC79BC221AE39500976F6B /* Requestable+Extension.swift in Sources */,
 				3DA85C0921AAA23500557368 /* Int+Extension.swift in Sources */,
 				3DA85C0B21AAA26900557368 /* Observable+Extension.swift in Sources */,
 				3DA85C1821AAA98E00557368 /* Requestable.swift in Sources */,
