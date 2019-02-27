@@ -1,17 +1,17 @@
 //
-//  BaseCollectionController.swift
+//  BaseTabBarController.swift
 //  MVPCocoa
 //
-//  Created by Fatih Şen on 30.11.2018.
-//  Copyright © 2018 Open Source. All rights reserved.
+//  Created by Fatih Şen on 27.02.2019.
+//  Copyright © 2019 Open Source. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-open class BaseCollectionController<P>: UICollectionViewController where P: Presenter {
+open class BaseTabBarController<P>: UITabBarController where P: Presenter {
 	
-	open var presenter: P! // only need this for that reason
+	open var presenter: P!
 	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
@@ -26,7 +26,7 @@ open class BaseCollectionController<P>: UICollectionViewController where P: Pres
 	
 	open override func viewWillDisappear(_ animated: Bool) {
 		presenter.detach()
-		super.viewWillAppear(animated)
+		super.viewWillDisappear(animated)
 	}
 	
 	open func setUp() {

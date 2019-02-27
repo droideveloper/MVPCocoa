@@ -15,6 +15,7 @@ open class BaseTableController<P>: UITableViewController where P: Presenter {
 	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
+		setUp()
 		presenter.didLoad()
 	}
 	
