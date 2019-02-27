@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-MVI architecture implementation basic and needs for iOS framework to create valid applications for swift 4.2
+MVP architecture implementation basic and needs for iOS framework to create valid applications for swift 4.2
                    DESC
 
   s.homepage     = "http://EXAMPLE/MVPCocoa"
