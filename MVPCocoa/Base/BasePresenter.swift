@@ -8,11 +8,15 @@
 
 import Foundation
 
-open class BasePresenter {
+open class BasePresenter<V> where V: View {
 	
-	public lazy var disposeBag = {
-		CompositeDisposeBag()
-	}()
+	public let view: V
+	
+	public let disposeBag = CompositeDisposeBag()
+
+	init(view: V) {
+		self.view = view
+	}
 	
 	open func didLoad() { }
 	open func attach() { }

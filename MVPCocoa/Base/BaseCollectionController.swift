@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 
-open class BaseCollectionController: UICollectionViewController {
-	open var presenter: Presenter! // only need this for that reason
+open class BaseCollectionController<P>: UICollectionViewController where P: Presenter {
+	
+	open var presenter: P! // only need this for that reason
 	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
@@ -27,7 +28,9 @@ open class BaseCollectionController: UICollectionViewController {
 		super.viewWillAppear(animated)
 	}
 	
-	open func setUp() { }
+	open func setUp() {
+		// set up called at didLoad
+	}
 	
 	open func showError(_ message: String) {
 		showError(message, .alert)
@@ -37,7 +40,11 @@ open class BaseCollectionController: UICollectionViewController {
 		showError(message, .alert, completion)
 	}
 	
-	open func showProgress() { }
+	open func showProgress() {
+		fatalError("showProgress is not implemented before you should implement this method")
+	}
 	
-	open func hideProgress() { }
+	open func hideProgress() {
+		fatalError("hideProgress is not implemented before you should implement this method")
+	}
 }
