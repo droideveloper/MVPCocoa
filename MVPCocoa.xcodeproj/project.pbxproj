@@ -11,6 +11,7 @@
 		3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */; };
 		3D3ED2DE21B1D3AE00EEC74C /* BaseCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */; };
 		3D3ED2E021B1D46800EEC74C /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DF21B1D46800EEC74C /* TableDataSource.swift */; };
+		3D466FCD2229EBEF008BAE21 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D466FCC2229EBEF008BAE21 /* Interceptor.swift */; };
 		3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF521AA9F2800557368 /* ObservableList.swift */; };
 		3DA85BF821AA9FDE00557368 /* PropertyChangable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */; };
 		3DA85BFA21AA9FFC00557368 /* CompositeDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */; };
@@ -56,6 +57,7 @@
 		3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
 		3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionController.swift; sourceTree = "<group>"; };
 		3D3ED2DF21B1D46800EEC74C /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
+		3D466FCC2229EBEF008BAE21 /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
 		3DA85BF521AA9F2800557368 /* ObservableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableList.swift; sourceTree = "<group>"; };
 		3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyChangable.swift; sourceTree = "<group>"; };
 		3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDisposeBag.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				3DA85C1721AAA98E00557368 /* Requestable.swift */,
+				3D466FCC2229EBEF008BAE21 /* Interceptor.swift */,
 			);
 			path = Net;
 			sourceTree = "<group>";
@@ -425,6 +428,7 @@
 				3DA85BFC21AAA01300557368 /* Event.swift in Sources */,
 				3DA85C0221AAA15800557368 /* Presenter.swift in Sources */,
 				3DDC9F7421B6F7B9006DFACD /* UITableView+Register.swift in Sources */,
+				3D466FCD2229EBEF008BAE21 /* Interceptor.swift in Sources */,
 				3DA85BFA21AA9FFC00557368 /* CompositeDisposeBag.swift in Sources */,
 				3DA85C0021AAA08C00557368 /* View.swift in Sources */,
 				3DA85C0F21AAA79600557368 /* String+Extension.swift in Sources */,
