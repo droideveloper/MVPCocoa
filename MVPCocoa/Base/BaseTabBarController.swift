@@ -13,9 +13,14 @@ open class BaseTabBarController<P>: UITabBarController where P: Presenter {
 	
 	open var presenter: P!
 	
+	open var isAvailable: Bool {
+		get {
+			return true
+		}
+	}
+	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
-		setUp()
 		presenter.didLoad()
 	}
 	

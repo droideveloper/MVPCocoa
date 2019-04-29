@@ -20,5 +20,9 @@ open class BasePresenter<V> where V: View {
 	
 	open func didLoad() { }
 	open func attach() { }
-	open func detach() { }
+	
+	open func detach() {
+		disposeBag.clear() // do clear those
+	}
 }
+

@@ -8,7 +8,8 @@
 
 import Foundation
 
-public protocol View {	
+public protocol View {
+	var isAvailable: Bool { get }
 	func setUp()
 	func showError(_ message: String)
 	func showError(_ message: String, completion: @escaping () -> Void)

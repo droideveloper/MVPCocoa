@@ -13,9 +13,14 @@ open class BaseTableController<P>: UITableViewController where P: Presenter {
 	
 	open var presenter: P! // only need this for that reason
 	
+	open var isAvailable: Bool {
+		get {
+			return true
+		}
+	}
+	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
-		setUp()
 		presenter.didLoad()
 	}
 	
@@ -26,7 +31,7 @@ open class BaseTableController<P>: UITableViewController where P: Presenter {
 	
 	open override func viewWillDisappear(_ animated: Bool) {
 		presenter.detach()
-		super.viewWillAppear(animated)
+		super.viewWillDisappear(animated)
 	}
 	
 	open func setUp() {
