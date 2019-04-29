@@ -26,7 +26,7 @@ extension UICollectionView: PropertyChangable {
 		if index == 0 {
 			self.insertItems(at: paths)
 		} else {
-			self.reloadItems(at: paths)
+			self.reloadData()
 		}
 	}
 	

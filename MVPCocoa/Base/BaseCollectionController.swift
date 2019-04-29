@@ -13,9 +13,14 @@ open class BaseCollectionController<P>: UICollectionViewController where P: Pres
 	
 	open var presenter: P! // only need this for that reason
 	
+	open var isAvailable: Bool {
+		get {
+			return true
+		}
+	}
+	
 	open override func viewDidLoad() {
 		super.viewDidLoad()
-		setUp()
 		presenter.didLoad()
 	}
 	
@@ -26,7 +31,7 @@ open class BaseCollectionController<P>: UICollectionViewController where P: Pres
 	
 	open override func viewWillDisappear(_ animated: Bool) {
 		presenter.detach()
-		super.viewWillAppear(animated)
+		super.viewWillDisappear(animated)
 	}
 	
 	open func setUp() {
