@@ -12,7 +12,7 @@ import RxSwift
 extension Observable {
 	
 	public func async<V>(_ view: V? = nil) -> Observable<Element> where V: View {
-		return subscribeOn(MainScheduler.asyncInstance)
+		return subscribeOn(ConcurrentDispatcher.instance)
 			.do(onError: { _ in
 				view?.hideProgress() // on error we do hide progress
 			}, onCompleted: {
