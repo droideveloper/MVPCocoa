@@ -91,7 +91,7 @@ MVP architecture implementation basic and needs for iOS framework to create vali
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "MVP/**/*.swift"
+  s.source_files  = "MVPCocoa/**/*.swift"
   s.exclude_files = "RxSwift/**/**/*.swift"
 
   # s.public_header_files = "Classes/**/*.h"
