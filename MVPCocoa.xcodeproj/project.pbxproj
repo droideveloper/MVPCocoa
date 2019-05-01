@@ -12,6 +12,8 @@
 		3D3ED2DE21B1D3AE00EEC74C /* BaseCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */; };
 		3D3ED2E021B1D46800EEC74C /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DF21B1D46800EEC74C /* TableDataSource.swift */; };
 		3D466FCD2229EBEF008BAE21 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D466FCC2229EBEF008BAE21 /* Interceptor.swift */; };
+		3D62A2F1227A1FEE00E538D7 /* BaseViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62A2F0227A1FEE00E538D7 /* BaseViewProxy.swift */; };
+		3D62A2F3227A205000E538D7 /* BasePresenterProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62A2F2227A205000E538D7 /* BasePresenterProxy.swift */; };
 		3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF521AA9F2800557368 /* ObservableList.swift */; };
 		3DA85BF821AA9FDE00557368 /* PropertyChangable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */; };
 		3DA85BFA21AA9FFC00557368 /* CompositeDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */; };
@@ -59,6 +61,8 @@
 		3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionController.swift; sourceTree = "<group>"; };
 		3D3ED2DF21B1D46800EEC74C /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
 		3D466FCC2229EBEF008BAE21 /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
+		3D62A2F0227A1FEE00E538D7 /* BaseViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProxy.swift; sourceTree = "<group>"; };
+		3D62A2F2227A205000E538D7 /* BasePresenterProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProxy.swift; sourceTree = "<group>"; };
 		3DA85BF521AA9F2800557368 /* ObservableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableList.swift; sourceTree = "<group>"; };
 		3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyChangable.swift; sourceTree = "<group>"; };
 		3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDisposeBag.swift; sourceTree = "<group>"; };
@@ -171,6 +175,8 @@
 				3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */,
 				3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */,
 				3DE447B92226DAE600B7907A /* BaseTabBarController.swift */,
+				3D62A2F0227A1FEE00E538D7 /* BaseViewProxy.swift */,
+				3D62A2F2227A205000E538D7 /* BasePresenterProxy.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -444,8 +450,10 @@
 				3DE447BA2226DAE600B7907A /* BaseTabBarController.swift in Sources */,
 				3DA85C0B21AAA26900557368 /* Observable+Extension.swift in Sources */,
 				3DA85C1821AAA98E00557368 /* Requestable.swift in Sources */,
+				3D62A2F1227A1FEE00E538D7 /* BaseViewProxy.swift in Sources */,
 				3D3ED2E021B1D46800EEC74C /* TableDataSource.swift in Sources */,
 				3DA85C1D21AAAAF100557368 /* BaseController.swift in Sources */,
+				3D62A2F3227A205000E538D7 /* BasePresenterProxy.swift in Sources */,
 				3DA85C1521AAA94200557368 /* UIColor+Extension.swift in Sources */,
 				3DA85C1321AAA87300557368 /* UITableView+Extension.swift in Sources */,
 				3DA85BF821AA9FDE00557368 /* PropertyChangable.swift in Sources */,
