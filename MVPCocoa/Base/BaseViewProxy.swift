@@ -12,7 +12,7 @@ open class BaseViewProxy: View {
 
 	private let view: View
 	
-	init(view: View) {
+	public init(view: View) {
 		self.view = view
 	}
 	

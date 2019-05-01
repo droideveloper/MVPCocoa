@@ -12,7 +12,7 @@ open class BasePresenterProxy: Presenter {
 	
 	private let presenter: Presenter
 	
-	init(presenter: Presenter) {
+	public init(presenter: Presenter) {
 		self.presenter = presenter
 	}
 	
