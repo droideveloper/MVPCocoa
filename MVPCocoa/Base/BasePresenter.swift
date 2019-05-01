@@ -14,7 +14,7 @@ open class BasePresenter<V> where V: View {
 	
 	public let disposeBag = CompositeDisposeBag()
 
-	init(view: V) {
+	public init(view: V) {
 		self.view = view
 	}
 	
