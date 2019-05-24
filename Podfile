@@ -6,10 +6,10 @@ target 'MVPCocoa' do
   use_frameworks!
 
   # Pods for MVPCocoa
-    pod 'RxSwift',    '~> 4.0'
-    pod 'RxCocoa',    '~> 4.0'	
-    pod 'Alamofire', '~> 4.7'
-    pod 'AlamofireImage', '~> 3.4'
+    pod 'RxSwift'
+    pod 'RxCocoa'
+    pod 'Alamofire'
+    pod 'AlamofireImage'
     pod 'Swinject'
   target 'MVPCocoaTests' do
     inherit! :search_paths
