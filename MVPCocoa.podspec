@@ -1,5 +1,5 @@
 #
-#  Be sure to run `pod spec lint MVICocoa.podspec' to ensure this is a
+#  Be sure to run `pod spec lint MVPCocoa.podspec' to ensure this is a
 #  valid spec and to remove all comments including this before submitting the spec.
 #
 #  To learn more about Podspec attributes see http://docs.cocoapods.org/specification.html
@@ -134,10 +134,10 @@ MVP architecture implementation basic and needs for iOS framework to create vali
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "RxSwift", "~> 4.0"
-  s.dependency "RxCocoa", "~> 4.0"
-  s.dependency "Alamofire", "~> 4.7"
-  s.dependency "AlamofireImage", "~> 3.4"
+  s.dependency "RxSwift"
+  s.dependency "RxCocoa"
+  s.dependency "Alamofire"
+  s.dependency "AlamofireImage"
   s.dependency "Swinject"	
 
 end
