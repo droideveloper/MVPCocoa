@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3D05C4B821B31B090062737F /* CollectionDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D05C4B721B31B090062737F /* CollectionDataSource.swift */; };
+		3D156E5522990E880089DC83 /* ObservableType+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D156E5422990E880089DC83 /* ObservableType+Extensions.swift */; };
 		3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */; };
 		3D3ED2DE21B1D3AE00EEC74C /* BaseCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */; };
 		3D3ED2E021B1D46800EEC74C /* TableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3ED2DF21B1D46800EEC74C /* TableDataSource.swift */; };
@@ -57,6 +58,7 @@
 
 /* Begin PBXFileReference section */
 		3D05C4B721B31B090062737F /* CollectionDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDataSource.swift; sourceTree = "<group>"; };
+		3D156E5422990E880089DC83 /* ObservableType+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableType+Extensions.swift"; sourceTree = "<group>"; };
 		3D3ED2DB21B1D39100EEC74C /* BaseTableController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableController.swift; sourceTree = "<group>"; };
 		3D3ED2DD21B1D3AE00EEC74C /* BaseCollectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionController.swift; sourceTree = "<group>"; };
 		3D3ED2DF21B1D46800EEC74C /* TableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableDataSource.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				3DDC9F7321B6F7B9006DFACD /* UITableView+Register.swift */,
 				3DDC9F7521B6F855006DFACD /* UICollectionView+Register.swift */,
 				3DDC79BB221AE39500976F6B /* Requestable+Extension.swift */,
+				3D156E5422990E880089DC83 /* ObservableType+Extensions.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -462,6 +465,7 @@
 				3D05C4B821B31B090062737F /* CollectionDataSource.swift in Sources */,
 				3DA85C0421AAA19E00557368 /* Loggable.swift in Sources */,
 				3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */,
+				3D156E5522990E880089DC83 /* ObservableType+Extensions.swift in Sources */,
 				3DDC9F7621B6F855006DFACD /* UICollectionView+Register.swift in Sources */,
 				3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */,
 				3DA85C2421AAAC6C00557368 /* UIController+Extension.swift in Sources */,
