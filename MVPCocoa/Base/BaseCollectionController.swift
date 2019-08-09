@@ -34,10 +34,6 @@ open class BaseCollectionController<P>: UICollectionViewController where P: Pres
 		super.viewWillDisappear(animated)
 	}
 	
-	open func setUp() {
-		// set up called at didLoad
-	}
-	
 	open func showError(_ message: String) {
 		showError(message, .alert)
 	}

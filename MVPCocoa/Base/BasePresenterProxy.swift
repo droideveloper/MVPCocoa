@@ -10,21 +10,21 @@ import Foundation
 
 open class BasePresenterProxy: Presenter {
 	
-	private let presenter: Presenter
+	private let delegate: Presenter
 	
 	public init(presenter: Presenter) {
-		self.presenter = presenter
+		self.delegate = presenter
 	}
 	
 	public func didLoad() {
-		presenter.didLoad()
+		delegate.didLoad()
 	}
 	
 	public func attach() {
-		presenter.attach()
+		delegate.attach()
 	}
 	
 	public func detach() {
-		presenter.detach()
+		delegate.detach()
 	}
 }

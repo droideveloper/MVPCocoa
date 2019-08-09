@@ -15,6 +15,9 @@
 		3D466FCD2229EBEF008BAE21 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D466FCC2229EBEF008BAE21 /* Interceptor.swift */; };
 		3D62A2F1227A1FEE00E538D7 /* BaseViewProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62A2F0227A1FEE00E538D7 /* BaseViewProxy.swift */; };
 		3D62A2F3227A205000E538D7 /* BasePresenterProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D62A2F2227A205000E538D7 /* BasePresenterProxy.swift */; };
+		3D79796422FDE75F003B7F2F /* Lock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D79796322FDE75F003B7F2F /* Lock.swift */; };
+		3D79796622FDE798003B7F2F /* SpinLock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D79796522FDE798003B7F2F /* SpinLock.swift */; };
+		3D79796822FDE80F003B7F2F /* AtomicProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D79796722FDE80F003B7F2F /* AtomicProperty.swift */; };
 		3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF521AA9F2800557368 /* ObservableList.swift */; };
 		3DA85BF821AA9FDE00557368 /* PropertyChangable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */; };
 		3DA85BFA21AA9FFC00557368 /* CompositeDisposeBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */; };
@@ -65,6 +68,9 @@
 		3D466FCC2229EBEF008BAE21 /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
 		3D62A2F0227A1FEE00E538D7 /* BaseViewProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewProxy.swift; sourceTree = "<group>"; };
 		3D62A2F2227A205000E538D7 /* BasePresenterProxy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasePresenterProxy.swift; sourceTree = "<group>"; };
+		3D79796322FDE75F003B7F2F /* Lock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lock.swift; sourceTree = "<group>"; };
+		3D79796522FDE798003B7F2F /* SpinLock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpinLock.swift; sourceTree = "<group>"; };
+		3D79796722FDE80F003B7F2F /* AtomicProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AtomicProperty.swift; sourceTree = "<group>"; };
 		3DA85BF521AA9F2800557368 /* ObservableList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableList.swift; sourceTree = "<group>"; };
 		3DA85BF721AA9FDE00557368 /* PropertyChangable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyChangable.swift; sourceTree = "<group>"; };
 		3DA85BF921AA9FFC00557368 /* CompositeDisposeBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositeDisposeBag.swift; sourceTree = "<group>"; };
@@ -124,6 +130,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D79796222FDE750003B7F2F /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				3D79796322FDE75F003B7F2F /* Lock.swift */,
+				3D79796522FDE798003B7F2F /* SpinLock.swift */,
+				3D79796722FDE80F003B7F2F /* AtomicProperty.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		3DA85BF421AA9F0B00557368 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +223,7 @@
 		3DC85C9921AA980100A0FED6 /* MVPCocoa */ = {
 			isa = PBXGroup;
 			children = (
+				3D79796222FDE750003B7F2F /* Common */,
 				3DA85C1921AAA9D100557368 /* Base */,
 				3DA85C1621AAA97C00557368 /* Net */,
 				3DA85C0521AAA1F100557368 /* Extensions */,
@@ -441,6 +458,7 @@
 				3DA85C0221AAA15800557368 /* Presenter.swift in Sources */,
 				3DDC9F7421B6F7B9006DFACD /* UITableView+Register.swift in Sources */,
 				3D466FCD2229EBEF008BAE21 /* Interceptor.swift in Sources */,
+				3D79796822FDE80F003B7F2F /* AtomicProperty.swift in Sources */,
 				3DA85BFA21AA9FFC00557368 /* CompositeDisposeBag.swift in Sources */,
 				3DA85C0021AAA08C00557368 /* View.swift in Sources */,
 				3DFC6C0D2276F31D00F9A4A8 /* ConcurrentDispatcher.swift in Sources */,
@@ -455,6 +473,7 @@
 				3DA85C1821AAA98E00557368 /* Requestable.swift in Sources */,
 				3D62A2F1227A1FEE00E538D7 /* BaseViewProxy.swift in Sources */,
 				3D3ED2E021B1D46800EEC74C /* TableDataSource.swift in Sources */,
+				3D79796622FDE798003B7F2F /* SpinLock.swift in Sources */,
 				3DA85C1D21AAAAF100557368 /* BaseController.swift in Sources */,
 				3D62A2F3227A205000E538D7 /* BasePresenterProxy.swift in Sources */,
 				3DA85C1521AAA94200557368 /* UIColor+Extension.swift in Sources */,
@@ -465,6 +484,7 @@
 				3D05C4B821B31B090062737F /* CollectionDataSource.swift in Sources */,
 				3DA85C0421AAA19E00557368 /* Loggable.swift in Sources */,
 				3D3ED2DC21B1D39100EEC74C /* BaseTableController.swift in Sources */,
+				3D79796422FDE75F003B7F2F /* Lock.swift in Sources */,
 				3D156E5522990E880089DC83 /* ObservableType+Extensions.swift in Sources */,
 				3DDC9F7621B6F855006DFACD /* UICollectionView+Register.swift in Sources */,
 				3DA85BF621AA9F2800557368 /* ObservableList.swift in Sources */,

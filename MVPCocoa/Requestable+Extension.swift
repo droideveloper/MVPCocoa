@@ -29,7 +29,10 @@ extension Requestable {
 	}
 	
 	public func create(url: URLConvertible, httpMethod: HTTPMethod) -> URLRequest {
-		return try! URLRequest(url: url, method: httpMethod)
+		guard let request = try? URLRequest(url: url, method: httpMethod) else {
+			fatalError("url is not valid please check, \(url)")
+		}
+		return request
 	}
 }
 

@@ -10,35 +10,31 @@ import Foundation
 
 open class BaseViewProxy: View {
 
-	private let view: View
+	private let delegate: View?
 	
 	public init(view: View) {
-		self.view = view
+		self.delegate = view
 	}
 	
 	public var isAvailable: Bool {
 		get {
-			return view.isAvailable
+			return delegate?.isAvailable ?? false
 		}
 	}
 	
-	public func setUp() {
-		view.setUp()
-	}
-	
 	public func showError(_ message: String) {
-		view.showError(message)
+		delegate?.showError(message)
 	}
 	
 	public func showError(_ message: String, completion: @escaping () -> Void) {
-		view.showError(message, completion: completion)
+		delegate?.showError(message, completion: completion)
 	}
 	
 	public func showProgress() {
-		view.showProgress()
+		delegate?.showProgress()
 	}
 	
 	public func hideProgress() {
-		view.hideProgress()
+		delegate?.hideProgress()
 	}
 }

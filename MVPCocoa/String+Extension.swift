@@ -10,4 +10,6 @@ import Foundation
 
 extension String {
 	public static let empty = ""
+	public static let line = "\n"
+	public static let tab = "\t"
 }

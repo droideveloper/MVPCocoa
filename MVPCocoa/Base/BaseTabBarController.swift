@@ -34,10 +34,6 @@ open class BaseTabBarController<P>: UITabBarController where P: Presenter {
 		super.viewWillDisappear(animated)
 	}
 	
-	open func setUp() {
-		// set up called at didLoad
-	}
-	
 	open func showError(_ message: String) {
 		showError(message, .alert)
 	}

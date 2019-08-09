@@ -24,9 +24,9 @@ extension UICollectionView: PropertyChangable {
 	public func notifyItemsInserted(_ index: Int, size: Int) {
 		let paths = toIndexPath(index: index, size: size)
 		if index == 0 {
-			self.insertItems(at: paths)
-		} else {
 			self.reloadData()
+		} else {
+			self.insertItems(at: paths)
 		}
 	}
 	
