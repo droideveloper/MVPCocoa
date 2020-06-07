@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MVPCocoa"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "MVPCocoa, is library that implements, Model-View-Presenter architecture for iOS framework."
 
   # This description is used to generate tags and improve search results.
@@ -134,10 +134,10 @@ MVP architecture implementation basic and needs for iOS framework to create vali
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "RxSwift"
-  s.dependency "RxCocoa"
-  s.dependency "Alamofire"
-  s.dependency "AlamofireImage"
-  s.dependency "Swinject"	
+  s.dependency "RxSwift", "~> 5"
+  s.dependency "RxCocoa", "~> 5"
+  s.dependency "Alamofire", "~> 4.2"
+  s.dependency "AlamofireImage", "~> 3.0"
+  s.dependency "Swinject", "~> 2.6.2"
 
 end
